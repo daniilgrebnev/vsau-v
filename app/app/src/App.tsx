@@ -6,6 +6,7 @@ import { Contacts } from './pages/Contacts/Contacts'
 import { Documents } from './pages/Documents/Documents'
 import { Faculties } from './pages/Faculties/Faculties'
 import { Main } from './pages/Main/Main'
+import { Programs } from './pages/Programs/Programs'
 import { Reception } from './pages/Reception/Reception'
 import { Single } from './pages/Single/Single'
 
@@ -19,6 +20,7 @@ function App() {
 					<Route path={`/reception`} element={<Reception />} />
 					<Route path={`/documents`} element={<Documents />} />
 					<Route path={`/contacts`} element={<Contacts />} />
+					<Route path={`/programs`} element={<Programs />} />
 					<Route path={`/post/:id`} element={<Single />} />
 				</Routes>
 			</Layout>

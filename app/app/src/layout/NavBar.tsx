@@ -35,7 +35,7 @@ export const NavBar = () => {
 		},
 		{
 			name: 'Программы обучения',
-			link: `/faculties`,
+			link: `/programs`,
 			icon: <AspectIcon fill='#0F91D6' height={25} />,
 		},
 		{

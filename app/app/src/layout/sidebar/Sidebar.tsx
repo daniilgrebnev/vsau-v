@@ -1,3 +1,8 @@
+import { DzenIcon } from '@/icons/DzenIcon'
+import { OKIcon } from '@/icons/OKIcon'
+import { TelegramIcon } from '@/icons/TelegramIcon'
+import { VKIcon } from '@/icons/VKIcon'
+import { YoutubeIcon } from '@/icons/YoutubeIcon'
 import { SidebarMenu } from './SidebarMenu'
 
 export const Sidebar = () => {
@@ -35,7 +40,23 @@ export const Sidebar = () => {
 			<div className='p-10 h-full overflow-y-auto overflow-x-hidden'>
 				<SidebarMenu />
 			</div>
-			<div className='w-full h-full bg-white'></div>
+			<div className='w-full h-full bg-white gap-6 flex items-center justify-center '>
+				<a className='hover:opacity-75 active:opacity-30 transition-all cursor-pointer'>
+					<VKIcon fill='#0F91D6' height={15} />
+				</a>
+				<a className='hover:opacity-75 active:opacity-30 transition-all cursor-pointer'>
+					<OKIcon fill='#0F91D6' height={20} />
+				</a>
+				<a className='hover:opacity-75 active:opacity-30 transition-all cursor-pointer'>
+					<TelegramIcon fill='#0F91D6' height={15} />
+				</a>
+				<a className='hover:opacity-75 active:opacity-30 transition-all cursor-pointer'>
+					<YoutubeIcon fill='#0F91D6' height={15} />
+				</a>
+				<a className='hover:opacity-75 active:opacity-30 transition-all cursor-pointer'>
+					<DzenIcon fill='#0F91D6' height={15} />
+				</a>
+			</div>
 		</div>
 	)
 }
