@@ -21,7 +21,12 @@ export const SidebarMenuItem = ({ item }: { item: ISidebarMenuItem }) => {
 			>
 				{item.children.length != 0 && (
 					<div className='absolute flex items-center justify-center -left-[10px] w-[2px]  w-[10px] h-full'>
-						<SliderArrow fill='#ffffff79' width={10} rotate={isOpen ? 90 : 0} />
+						<SliderArrow
+							fill='#ffffff79'
+							width={10}
+							height={10}
+							rotate={isOpen ? 90 : 0}
+						/>
 					</div>
 				)}
 
@@ -39,7 +44,7 @@ export const SidebarMenuItem = ({ item }: { item: ISidebarMenuItem }) => {
 				<div style={{ gridTemplateColumns: '20% 80%' }} className='grid'>
 					<div className=''></div>
 					<div
-						className={`bg-[#ffffff3a] p-4 rounded-[10px] ${style.menuItemChildren}`}
+						className={`bg-[#ffffff1a] p-4 rounded-[10px] ${style.menuItemChildren}`}
 					>
 						<div className='text-white text-[12px] flex flex-col gap-2 '>
 							{item.children.map((itemx, index) => (
