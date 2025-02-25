@@ -114,11 +114,9 @@ function abit_get_tablepress_html(WP_REST_Request $request)
 		return new WP_Error('not_found', 'table_id не найден', ['status' => 404]);
 	}
 
-	if (!shortcode_exists('tablepress')) {
-		return new WP_Error('tablepress_not_found', 'TablePress не установлен', ['status' => 400]);
-	}
 
-	$table_html = do_shortcode("[tablepress id={$table_id} /]");
+
+	$table_html = do_shortcode("[table id={$table_id} /]");
 
 	if (empty($table_html)) {
 		return new WP_Error('table_not_found', 'Таблица не найдена', ['status' => 404]);
