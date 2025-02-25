@@ -1,0 +1,90 @@
+.menuItem {
+	grid-template-columns: 20% 80%;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.menuItem img {
+	opacity: 0.5;
+	transition: all 0.3s ease;
+}
+.menuItem:hover img {
+	opacity: 1;
+}
+.menuItemTitle {
+	transition: all 0.3s ease;
+	font-weight: 400;
+}
+.menuItem:hover .menuItemTitle {
+	font-weight: 600;
+}
+.menuItem:hover {
+	scale: 1.05;
+}
+
+.menuItem:active {
+	scale: 1.1;
+}
+
+.menuItemChildren {
+	animation: fromTop 0.2s ease;
+	overflow: hidden;
+}
+@keyframes fromTop {
+	0% {
+		transform: translateY(-10px);
+		height: 10%;
+	}
+	100% {
+		transform: translateY(0px);
+		height: 100%;
+	}
+}
+.menuItemChildrenOpen {
+	height: 100% !important;
+}
+.menuItemWidget:hover img {
+	opacity: 1;
+}
+.menuItemWidget:hover div {
+	scale: 1.05;
+}
+.menuItemWidget:active div {
+	scale: 1.1;
+}
+.menuItemWidget {
+	transition: all 0.3s ease;
+}
+.menuItemWidgetBottom {
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.menuItemWidgetBottom p {
+	transition: all 0.3s ease;
+	font-weight: 400;
+	opacity: 0.5;
+}
+.menuItemWidgetBottom:hover {
+	background: #ffffff3a;
+}
+.menuItemWidgetBottom:hover img {
+	scale: 1.05;
+	opacity: 1;
+}
+.menuItemWidgetBottom:hover p {
+	opacity: 1;
+}
+.menuItemWidgetBottom img {
+	opacity: 0.5;
+	transition: all 0.3s ease;
+	width: 28px;
+	height: 28px;
+}
+.menuItemWidgetBottom:active {
+	scale: 1.1;
+}

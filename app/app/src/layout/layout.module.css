@@ -1,0 +1,4 @@
+.item:hover svg {
+	position: absolute;
+	left: -9999px;
+}

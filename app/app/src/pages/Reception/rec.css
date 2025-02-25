@@ -1,0 +1,27 @@
+.container_admission a:first-child {
+	background: linear-gradient(
+		343.62deg,
+		#37aeed 0.5%,
+		#73cefe 98.89%
+	) !important;
+	color: #fff !important;
+	font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+	font-weight: 600;
+	padding: 2rem 1rem;
+	border-radius: 10px;
+}
+.container_admission a:first-child .quest {
+	background: #fff !important;
+}
+
+.container_admission a:first-child .quest svg {
+	color: #3a9dd3 !important;
+}
+
+.quest {
+	background: #1495d9 !important;
+}
+
+.quest svg {
+	color: #fff !important;
+}
