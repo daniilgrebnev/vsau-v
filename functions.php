@@ -194,6 +194,7 @@ if (defined('JETPACK__VERSION')) {
 include get_template_directory() . '/api/api.php';
 include get_template_directory() . '/api/faculties.php';
 include get_template_directory() . '/api/admission.php';
+include get_template_directory() . '/api/tablepress.php';
 function abit_add_admin_page()
 {
 	add_menu_page(
