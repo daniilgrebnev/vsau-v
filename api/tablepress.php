@@ -1,29 +1,13 @@
 <?php
-
-/**
- * Плагин для хранения table_id и API
- * 
- * Plugin Name: Abit Table API
- * Description: API для хранения и работы с table_id из TablePress
- * Version: 1.0
- * Author: Developer
- */
-
-if (!defined('ABSPATH')) {
-	exit; // Запрещаем прямой доступ
-}
-
-// Хук для создания таблицы при активации плагина
-register_activation_hook(__FILE__, 'abit_create_table');
-
-function abit_create_table()
+// Создание таблицы и установка значения table_id = 1 при активации темы
+function abit_create_table_on_theme_activation()
 {
 	global $wpdb;
 	$table_name = $wpdb->prefix . 'abit_table';
-
 	$charset_collate = $wpdb->get_charset_collate();
 
-	$sql = "CREATE TABLE $table_name (
+	// SQL-запрос для создания таблицы
+	$sql = "CREATE TABLE IF NOT EXISTS $table_name (
         id INT AUTO_INCREMENT PRIMARY KEY,
         table_id INT NOT NULL
     ) $charset_collate;";
@@ -31,9 +15,17 @@ function abit_create_table()
 	require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 	dbDelta($sql);
 
-	// Добавляем начальное значение, если оно не существует
-	$wpdb->insert($table_name, ['table_id' => 1]);
+	// Проверяем, есть ли уже запись
+	$exists = $wpdb->get_var("SELECT COUNT(*) FROM $table_name");
+
+	// Если записи нет, добавляем table_id = 1
+	if ($exists == 0) {
+		$wpdb->insert($table_name, ['table_id' => 1]);
+	}
 }
+
+// Хук срабатывает при активации темы
+add_action('after_switch_theme', 'abit_create_table_on_theme_activation');
 
 // Регистрация API маршрутов
 add_action('rest_api_init', function () {
@@ -51,7 +43,7 @@ add_action('rest_api_init', function () {
 		'permission_callback' => '__return_true',
 	]);
 
-	// Получить HTML таблицу TablePress по сохранённому table_id
+	// Получить HTML таблицы TablePress по сохранённому table_id
 	register_rest_route('abit/v1', '/table/html', [
 		'methods'  => 'GET',
 		'callback' => 'abit_get_tablepress_html',
@@ -87,16 +79,30 @@ function abit_update_table_id(WP_REST_Request $request)
 	}
 
 	$table_id = intval($params['table_id']);
+
+	// Проверяем, есть ли запись в базе
+	$exists = $wpdb->get_var("SELECT COUNT(*) FROM $table_name");
+
+	if ($exists == 0) {
+		// Если записи нет, создаём её
+		$inserted = $wpdb->insert($table_name, ['table_id' => $table_id]);
+		if ($inserted === false) {
+			return new WP_Error('db_error', 'Ошибка создания записи', ['status' => 500]);
+		}
+		return ['message' => 'table_id создан', 'table_id' => $table_id];
+	}
+
+	// Обновляем существующую запись
 	$updated = $wpdb->update($table_name, ['table_id' => $table_id], ['id' => 1]);
 
 	if ($updated === false) {
-		return new WP_Error('db_error', 'Ошибка обновления', ['status' => 500]);
+		return new WP_Error('db_error', 'Ошибка обновления table_id', ['status' => 500]);
 	}
 
 	return ['message' => 'table_id обновлён', 'table_id' => $table_id];
 }
 
-// Функция для получения HTML таблицы по сохранённому table_id
+// Функция для получения HTML таблицы TablePress по сохранённому table_id
 function abit_get_tablepress_html(WP_REST_Request $request)
 {
 	global $wpdb;
