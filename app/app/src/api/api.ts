@@ -61,3 +61,14 @@ export const getNews = async () => {
 			return null
 		})
 }
+export const getProgramsTable = async () => {
+	return api
+		.get(`/table/html`)
+		.then(res => {
+			return res.data
+		})
+		.catch(err => {
+			console.log(err)
+			return null
+		})
+}

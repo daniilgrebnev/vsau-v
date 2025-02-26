@@ -1,0 +1,34 @@
+.tablepress {
+	background: white;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.tablepress thead {
+	padding: 0 50px;
+	position: sticky;
+	top: 0;
+	color: white;
+	border-radius: 10px;
+	overflow: hidden;
+
+	gap: 1px;
+	width: 100%;
+}
+
+.tablepress th {
+	background: #0f91d6;
+	padding: 10px 20px;
+	outline: 0.5px solid rgba(255, 255, 255, 0.681);
+	font-size: clamp(14px, 0.8vw, 16px);
+	text-align: left;
+}
+.tablepress td {
+	padding: 10px 20px;
+	outline: 0.5px solid rgba(255, 255, 255, 0.681);
+	font-size: clamp(14px, 0.8vw, 16px);
+	text-align: left;
+	border-bottom: 0.5px solid rgb(109, 107, 107);
+}
