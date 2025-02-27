@@ -207,7 +207,7 @@ function abit_add_admin_page()
 		25 // Позиция в меню
 	);
 }
-
+//df
 add_action('admin_menu', 'abit_add_admin_page');
 
 function abit_admin_page_content()
