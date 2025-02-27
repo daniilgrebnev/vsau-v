@@ -225,7 +225,7 @@ function abit_admin_page_content()
 function serve_react_app($template)
 {
 	// Путь к вашему index.html в React-приложении
-	$react_app_path = get_template_directory() . '/app/index.html';
+	$react_app_path = get_template_directory() . '/app/index.php';
 
 	if (file_exists($react_app_path)) {
 		return $react_app_path;
