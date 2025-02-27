@@ -220,3 +220,17 @@ function abit_admin_page_content()
 		echo '<h2>Файл admin/index.php не найден</h2>';
 	}
 }
+
+
+function serve_react_app($template)
+{
+	// Путь к вашему index.html в React-приложении
+	$react_app_path = get_template_directory() . '/app/index.html';
+
+	if (file_exists($react_app_path)) {
+		return $react_app_path;
+	}
+
+	return $template;
+}
+add_filter('template_include', 'serve_react_app');
