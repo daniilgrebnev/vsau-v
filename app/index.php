@@ -10,7 +10,7 @@
 	<script type="module" crossorigin src="<?php echo get_template_directory_uri(); ?>/app/index.js"></script>
 	<link rel="stylesheet" crossorigin href="<?php echo get_template_directory_uri(); ?>/app/style.css">
 
-	<?php wp_head(); ?>
+
 </head>
 
 <body>
