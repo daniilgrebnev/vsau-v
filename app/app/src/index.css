@@ -9,53 +9,6 @@
 	display: none;
 }
 
-.wp-block:has(.block-link_content) {
-	align-items: stretch !important;
-}
-
-.block-link_content {
-	padding: 30px 50px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: start;
-	gap: 20px;
-
-	min-height: 100%;
-	flex: 1;
-	border-radius: 10px;
-	.link-admin {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100%;
-	}
-	a,
-	input,
-	.rich-text {
-		height: fit-content !important;
-	}
-	&.blue {
-		background: #0f91d6;
-		a,
-		input,
-		.rich-text {
-			color: #fff !important;
-			text-decoration: none;
-		}
-	}
-
-	&.white {
-		background: #fff;
-		a,
-		input,
-		.rich-text {
-			color: black;
-
-			text-decoration: none;
-		}
-	}
-}
 .is-layout-flex {
 	display: flex;
 	gap: 10px;
