@@ -15,7 +15,9 @@ export const ListMain = () => {
 	const { pathname } = useLocation()
 
 	const isActiveHandle = (id: string) => {
-		return pathname == id
+		const postId = pathname.split('/')[pathname.split('/').length - 1]
+		console.log(postId, id)
+		return postId == id
 	}
 
 	useEffect(() => {
