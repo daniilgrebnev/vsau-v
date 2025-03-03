@@ -1,28 +1,33 @@
 <?php
+// Добавляем хук для проверки и создания таблицы при загрузке темы
+add_action('init', 'check_and_create_abit_table');
 
-register_activation_hook(__FILE__, 'create_abit_table');
-
-function create_abit_table()
+function check_and_create_abit_table()
 {
 	global $wpdb;
 	$table_name = $wpdb->prefix . 'abit_emails';
-	$charset_collate = $wpdb->get_charset_collate();
 
-	$sql = "CREATE TABLE $table_name (
-        id mediumint(9) NOT NULL AUTO_INCREMENT,
-        email varchar(100) NOT NULL,
-        abit_email varchar(100) NOT NULL,
-        abit_fio varchar(100) NOT NULL,
-        abit_text text NOT NULL,
-        created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL,
-        PRIMARY KEY (id)
-    ) $charset_collate;";
+	// Проверяем, существует ли таблица
+	if ($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {
+		// Если таблица не существует, создаем её
+		$charset_collate = $wpdb->get_charset_collate();
 
-	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-	dbDelta($sql);
+		$sql = "CREATE TABLE $table_name (
+            id mediumint(9) NOT NULL AUTO_INCREMENT,
+            email varchar(100) NOT NULL,
+            abit_email varchar(100) NOT NULL,
+            abit_fio varchar(100) NOT NULL,
+            abit_text text NOT NULL,
+            created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL,
+            PRIMARY KEY (id)
+        ) $charset_collate;";
+
+		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+		dbDelta($sql);
+	}
 }
 
-
+// Регистрируем REST API endpoint
 add_action('rest_api_init', function () {
 	register_rest_route('abit/v1', '/email', array(
 		'methods' => 'POST',
@@ -45,12 +50,17 @@ function handle_abit_email(WP_REST_Request $request)
 		return new WP_Error('missing_fields', 'Все поля обязательны для заполнения', array('status' => 400));
 	}
 
-	$wpdb->insert($table_name, array(
+	$result = $wpdb->insert($table_name, array(
 		'email' => $email,
 		'abit_email' => $abit_email,
 		'abit_fio' => $abit_fio,
 		'abit_text' => $abit_text
 	));
+
+	if ($result === false) {
+		error_log('Database error: ' . $wpdb->last_error);
+		return new WP_Error('db_error', 'Ошибка при сохранении данных: ' . $wpdb->last_error, array('status' => 500));
+	}
 
 	$id = $wpdb->insert_id;
 
@@ -69,7 +79,7 @@ function handle_abit_email(WP_REST_Request $request)
 	}
 }
 
-
+// Регистрируем GET endpoint для получения данных
 add_action('rest_api_init', function () {
 	register_rest_route('abit/v1', '/email', array(
 		'methods' => 'GET',
