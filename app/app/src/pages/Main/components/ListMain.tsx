@@ -15,7 +15,7 @@ export const ListMain = () => {
 	const { pathname } = useLocation()
 
 	const isActiveHandle = (id: string) => {
-		return pathname.includes(id)
+		return pathname == id
 	}
 
 	useEffect(() => {
