@@ -1,12 +1,12 @@
 import axios from 'axios'
 
 const localBaseUrl = 'http://localhost/abit/wp-json/abit/v1'
-// const baseURL = 'http://verba.gurgurich.ru/wp-json/abit/v1'
+const baseURL = 'http://verba.gurgurich.ru/wp-json/abit/v1'
 
 const webState = process.env.NODE_ENV
 
 const api = axios.create({
-	baseURL: webState === 'development' ? localBaseUrl : localBaseUrl,
+	baseURL: webState === 'development' ? localBaseUrl : baseURL,
 })
 
 export const getByCategory = async (category: string) => {
