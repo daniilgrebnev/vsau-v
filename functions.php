@@ -196,6 +196,7 @@ include get_template_directory() . '/api/faculties.php';
 include get_template_directory() . '/api/admission.php';
 include get_template_directory() . '/api/tablepress.php';
 include get_template_directory() . '/api/email.php';
+include get_template_directory() . '/api/menus.php';
 function abit_add_admin_page()
 {
 	add_menu_page(

@@ -1,12 +1,12 @@
 import axios from 'axios'
 
-const localBaseUrl = 'http://localhost/abit/wp-json/abit/v1'
-const baseURL = 'http://verba.gurgurich.ru/wp-json/abit/v1'
+const localBaseUrl = 'http://localhost/wp-json/abit/v1'
+// const baseURL = 'http://verba.gurgurich.ru/wp-json/abit/v1'
 
 const webState = process.env.NODE_ENV
 
 const api = axios.create({
-	baseURL: webState === 'development' ? localBaseUrl : baseURL,
+	baseURL: webState === 'development' ? localBaseUrl : localBaseUrl,
 })
 
 export const getByCategory = async (category: string) => {
@@ -69,6 +69,39 @@ export const getProgramsTable = async () => {
 		.get(`/table/html`)
 		.then(res => {
 			return res.data
+		})
+		.catch(err => {
+			console.log(err)
+			return null
+		})
+}
+
+export interface IMenuItem {
+	id: string
+	name: string
+	image: string
+	slug: string
+}
+export const getMenu = async ({
+	menuName,
+}: {
+	menuName: string
+}): Promise<IMenuItem[] | null> => {
+	return api
+		.get(`/menu/${menuName}`)
+		.then(res => {
+			return res.data as IMenuItem[]
+		})
+		.catch(err => {
+			console.log(err)
+			return null
+		})
+}
+export const getPage = async ({ id }: { id: string }) => {
+	return api
+		.get(`/page/${id}/html`)
+		.then(res => {
+			return res.data as HTMLCollection
 		})
 		.catch(err => {
 			console.log(err)
