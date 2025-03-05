@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const localBaseUrl = 'http://localhost/wp-json/abit/v1'
+const localBaseUrl = '/wp-json/abit/v1'
 // const baseURL = 'http://verba.gurgurich.ru/wp-json/abit/v1'
 
 const webState = process.env.NODE_ENV
