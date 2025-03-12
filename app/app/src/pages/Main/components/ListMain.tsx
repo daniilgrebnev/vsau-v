@@ -21,7 +21,7 @@ export const ListMain = () => {
 	}
 
 	useEffect(() => {
-		getByCategory('main')
+		getByCategory('abit_list')
 			.then(res => {
 				setList(res ?? null)
 			})

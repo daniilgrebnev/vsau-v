@@ -23,7 +23,7 @@ export const MainWidgets = () => {
 
 	const [widgets, setWidgets] = useState<IMenuItem[]>([])
 	useEffect(() => {
-		getMenu({ menuName: 'Middle' }).then(res => {
+		getMenu({ menuName: 'abitMiddle' }).then(res => {
 			setWidgets(res ?? [])
 		})
 	}, [])
