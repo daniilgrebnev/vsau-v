@@ -28,12 +28,12 @@ export const MainWidgets = () => {
 		})
 	}, [])
 	return (
-		<div className='w-full flex gap-[10px] justify-between flex-wrap'>
+		<div className='w-full max-md:block flex gap-[10px] justify-between flex-wrap'>
 			{widgets?.map(w => (
 				<Link
 					to={`/page/${w.id}`}
 					style={{ gridTemplateColumns: '20% 80%' }}
-					className='grid gap-[10px] bg-white py-4 px-2 rounded-[15px] w-[32%] hover:opacity-80 active:opacity-50 transition-all'
+					className='grid  max-md:w-full gap-[10px] bg-white py-4 px-2 rounded-[15px] w-[32%] hover:opacity-80 active:opacity-50 transition-all'
 				>
 					<div className='flex items-center justify-end'>
 						<div className='bg-[#1495D9] w-[40px] aspect-square flex items-center justify-center  rounded-[10px]'>

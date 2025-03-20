@@ -16,7 +16,7 @@ interface INvItem {
 	icon: React.ReactNode
 }
 
-export const NavBar = () => {
+export const NavBar = ({}) => {
 	const items: INvItem[] = [
 		{
 			name: 'Подать документы',
@@ -61,13 +61,13 @@ export const NavBar = () => {
 
 	return (
 		<>
-			<div className='flex sticky top-0 z-50 items-center justify-between gap-2 py-4 px-12 w-full overflow-x-auto bg-white flex-nowrap max-w-full  no-scroll-class min-h-[90px] '>
+			<div className='flex sticky top-0 z-50 items-center justify-between gap-2 py-4 px-12 w-full overflow-x-auto bg-white flex-nowrap max-w-full  no-scroll-class min-h-[90px] max-w-[100dvw] max-md:px-4 py-0.5'>
 				{items.map(item => (
 					<Link
 						key={item.name}
 						style={{ width: 100 / items.length + '%' }}
 						to={`${item.link}`}
-						className={`flex items-center transition-all justify-center gap-3 py-2 text-sm rounded-[30px] hover:bg-[#0F91D6] hover:text-white hover:justify-center min-w-[250px]  ${styles.item}`}
+						className={`flex items-center transition-all justify-center gap-3 py-2 text-sm rounded-[30px] hover:bg-[#0F91D6] hover:text-white hover:justify-center min-w-[250px] max-md:text-[13px] max-md:min-w-[170px]  ${styles.item}`}
 					>
 						{item.icon}
 

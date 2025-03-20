@@ -17,7 +17,7 @@ export const News = () => {
 		})
 	}, [])
 	return (
-		<div className='px-4 w-full'>
+		<div className='px-4 w-full max-md:hidden'>
 			<h3 className='text-xl mb-5 text-[#3F3F3F66]'>
 				Новости приемной комиссии
 			</h3>
