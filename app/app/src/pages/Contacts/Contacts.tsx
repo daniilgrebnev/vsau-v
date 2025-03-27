@@ -2,14 +2,14 @@ import { List } from '../Faculties/components/list/List'
 
 export const Contacts = () => {
 	return (
-		<div className='px-24 py-6 h-[100%] w-full flex flex-col justify-start items-start gap-10'>
+		<div className='px-24 py-6 h-[100%] w-full flex flex-col justify-start items-start gap-10 max-md:px-4 max-md:py-2'>
 			<h2 className='text-[#3F3F3F66] text-3xl '>Контактная информация</h2>
 			<div className='p-8 bg-white '>
 				<h3 className='text-xl mb-10 font-semibold text-[#0F91D6]'>
 					Телефон приёмной комиссии: <br /> +7 (473) 253 78 74
 				</h3>
-				<div className='flex items-start justify-start gap-10'>
-					<div className='w-1/2'>
+				<div className='flex items-start justify-start gap-10 max-md:flex-col max-md:text-center max-md:items-center'>
+					<div className='w-1/2 max-md:w-full'>
 						<div className=' text-[#000000] mb-10'>
 							<span className=' font-semibold text-[#000000]'>
 								Демидов Павел Валерьевич

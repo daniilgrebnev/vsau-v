@@ -6,7 +6,7 @@ import { Slider } from './components/slider/Slider'
 export const Faculties = () => {
 	const [faculties, setFaculties] = useState<'slider' | 'list'>('list')
 	return (
-		<div className='py-4 px-24 w-full flex justify-between items-start flex-col gap-10 h-full'>
+		<div className='py-4 px-24 w-full flex justify-between items-start flex-col gap-10 h-full max-md:py-2 max-md:px-4'>
 			<div className=' flex items-start justify-start flex-col gap-10'>
 				<h2 className='text-4xl font-bold'>Уважаемые абитуриенты!</h2>
 				<p className=''>

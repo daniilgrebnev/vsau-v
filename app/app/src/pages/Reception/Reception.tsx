@@ -18,7 +18,7 @@ export const Reception = () => {
 		})
 	}, [])
 	return (
-		<div className='px-24 py-6 flex flex-col gap-10 a'>
+		<div className='px-24 py-6 flex flex-col gap-10 a max-md:px-4 max-md:py-2'>
 			<h2 className='text-[#3F3F3F66] text-3xl '>Информация о приеме</h2>
 			<div className='container_admission flex items-center justify-between gap-4 flex-col w-full  '>
 				{admissions?.map(item => (

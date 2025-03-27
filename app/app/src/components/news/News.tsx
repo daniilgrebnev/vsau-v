@@ -28,15 +28,17 @@ export const News = () => {
 						className='w-full aspect-[3.2/1] bg-white overflow-hidden rounded-lg flex items-center justify-between  hover:opacity-50 active:opacity-30 transition-all'
 						key={item.id}
 					>
-						<div className='h-full w-1/3 h-full'>
+						<div className='h-full w-[40%] h-full'>
 							<img
 								src={item.image}
 								alt=''
 								className='w-full h-full object-cover'
 							/>
 						</div>
-						<div className='w-2/3 p-4 h-full flex items-start justify-start'>
-							<p className='text-[#3F3F3F]  font-bold'>{item.title}</p>
+						<div className='w-[60%] p-4 h-full flex items-start justify-start'>
+							<p className='text-[#3F3F3F]  font-bold text-sm line-clamp-3'>
+								{item.title}
+							</p>
 						</div>
 					</a>
 				))}

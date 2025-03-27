@@ -6,7 +6,7 @@ import { MainWidgets } from './components/MainWidgets'
 export const Main = () => {
 	return (
 		<div
-			className='p-[40px] max-w-screen overflow-x-hidden grid max-md:block max-md:p-[10px]'
+			className='p-[40px] max-w-screen  grid max-md:block max-md:p-[10px]'
 			style={{ gridTemplateColumns: '65% 35%' }}
 		>
 			<div className='flex items-start justify-start flex-col gap-6'>
