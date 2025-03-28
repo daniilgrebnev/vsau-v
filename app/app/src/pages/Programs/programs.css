@@ -8,6 +8,7 @@
 
 .tablepress thead {
 	padding: 0 50px;
+	background: #1495d9;
 	position: sticky;
 	top: 0;
 	color: white;
