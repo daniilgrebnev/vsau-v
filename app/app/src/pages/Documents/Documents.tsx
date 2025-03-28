@@ -1,3 +1,8 @@
+import { CopyIcon } from '@/icons/CopyIcon'
+import { ExplorerIcon } from '@/icons/ExplorerIcon'
+import { MapMarkerIcon } from '@/icons/MapMarkerIcon'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { CommIcon } from '../../icons/CommIcon'
 import { GosuslugiIcon } from '../../icons/GosuslugiIcon'
 import { MailIcon } from '../../icons/MailIcon'
@@ -38,7 +43,8 @@ const CommItem = () => {
 			</div>
 
 			<div className={styles.button}>
-				<a href=''>Показать на карте</a>
+				<MapMarkerIcon height={15} fill='white' />
+				<a href='https://yandex.ru/maps/-/CHRKeI~l'>Показать на карте</a>
 			</div>
 			<div className='h-full flex flex-col gap-2 justify-start items-start '>
 				<b className='mb-10'>Пн - Пт, с 8:30 до 16:30</b>
@@ -50,6 +56,12 @@ const CommItem = () => {
 }
 
 const MailItem = () => {
+	const [copied, setCopied] = useState(false)
+	const handleCopy = () => {
+		navigator.clipboard.writeText('entrance@36.vsau.ru')
+		setCopied(true)
+		setTimeout(() => setCopied(false), 1000)
+	}
 	return (
 		<div
 			style={{
@@ -68,22 +80,27 @@ const MailItem = () => {
 				<p className={styles.subDescr}>entrance@36.vsau.ru</p>
 			</div>
 
-			<div className={styles.button}>
-				<a href=''>Скопировать адрес эл. почты</a>
+			<div className={styles.button + ' ' + (copied ? styles.copied : '')}>
+				<div className='flex items-center justify-center h-full'>
+					<CopyIcon height={15} fill={copied ? '#37AEED' : '#fff'} />
+				</div>
+				<p className='link' onClick={handleCopy}>
+					{copied ? 'Скопировано!' : 'Скопировать адрес эл. почты'}
+				</p>
 			</div>
-			<div className='h-full flex flex-col gap-4 justify-start items-start '>
-				<b className='text-lg'>
+			<div className='h-full flex flex-col gap-1 justify-start items-start '>
+				<b className='text-md'>
 					Инструкции для подготовки и направления документов:
 				</b>
-				<a className='underline font-light' href=''>
+				<Link className='underline font-light' to='/post/42546'>
 					Среднее профессиональное образование (СПО)
-				</a>
-				<a className='underline font-light' href=''>
+				</Link>
+				<Link className='underline font-light' to='/post/42544'>
 					Бакалавриат / специалитет
-				</a>
-				<a className='underline font-light' href=''>
+				</Link>
+				<Link className='underline font-light' to='/post/42542'>
 					Магистратура
-				</a>
+				</Link>
 			</div>
 		</div>
 	)
@@ -108,7 +125,8 @@ const GosuslugiItem = () => {
 				</p>
 			</div>
 			<div className={styles.button}>
-				<a href=''>Открыть в Госуслугах</a>
+				<ExplorerIcon height={15} fill='#fff' />
+				<a href='https://www.gosuslugi.ru/vuzonline'>Открыть в Госуслугах</a>
 			</div>
 			<div className='h-full'></div>
 		</div>
