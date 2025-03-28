@@ -16,7 +16,8 @@
 	overflow: hidden;
 	width: 100%;
 }
-table thead tr {
+table thead tr,
+table thead td {
 	background: #1495d9 !important;
 }
 
