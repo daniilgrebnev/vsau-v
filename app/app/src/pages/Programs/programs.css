@@ -8,13 +8,16 @@
 
 .tablepress thead {
 	padding: 0 50px;
-	background: #1495d9;
+	background: #1495d9 !important;
 	position: sticky;
 	top: 0;
 	color: white;
 	border-radius: 10px;
 	overflow: hidden;
 	width: 100%;
+}
+table thead {
+	background: #1495d9 !important;
 }
 
 .tablepress th {
