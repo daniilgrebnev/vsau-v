@@ -23,7 +23,7 @@ export const Slider = () => {
 		<div className='h-full w-full flex items-center justify-center'>
 			<div className=' h-[100%] w-full flex gap-10 flex-col justify-center items-center'>
 				<img
-					className={`aspect-[2.5/1] max-h-[100%] h-[100%] scale block `}
+					className={`aspect-[2.5/1] w-[100%] scale block `}
 					src={sliderArr[index].img}
 					alt=''
 				/>
