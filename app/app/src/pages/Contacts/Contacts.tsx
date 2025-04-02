@@ -6,7 +6,14 @@ export const Contacts = () => {
 			<h2 className='text-[#3F3F3F66] text-3xl '>Контактная информация</h2>
 			<div className='p-8 bg-white '>
 				<h3 className='text-xl mb-10 font-semibold text-[#0F91D6]'>
-					Телефон приёмной комиссии: <br /> +7 (473) 253 78 74
+					Телефоны приёмной комиссии: <br />
+					<a className='hover:underline' href='tel:+7-(473)-253-78-74'>
+						+7-(473)-253-78-74
+					</a>
+					,<br />
+					<a className='hover:underline' href='tel:+7-(473)-253-78-67'>
+						+7-(473)-253-78-67
+					</a>
 				</h3>
 				<div className='flex items-start justify-start gap-10 max-md:flex-col max-md:text-center max-md:items-center'>
 					<div className='w-1/2 max-md:w-full'>
@@ -29,24 +36,27 @@ export const Contacts = () => {
 					</div>
 					<div className='flex flex-col justify-between items-start gap-5 h-full'>
 						<div className=''>
-							<span className=' font-semibold text-[#000000]'>
-								Коротких Татьяна Васильевна
+							<span className='font-semibold text-[#000000]'>
+								Калмыкова Валерия Алексеевна
 							</span>
-							<br /> секретарь приемной комиссии
+							<br /> ведущий специалист отдела сопровождения целевого приема и
+							обучения – по вопросам приема на целевое обучение
 						</div>
 						<div className=''>
-							Телефон: (473) 253 78 74 E-mail: entrance@vsau.ru Адрес: г. <br />
-							Воронеж, ул. Мичурина, 1, ауд. 177
+							Телефон: (473) 253 78 74 <br /> E-mail: celevoe@emd.vsau.ru
 						</div>
 						<div className=''>
 							<span className=' font-semibold text-[#000000]'>
-								Агибалов Александр Владимирович
+								Чевычалов Кирилл Юрьевич
 							</span>
-							<br /> ректор Воронежского ГАУ
+							<br /> специалист центра по работе с абитуриентами
 						</div>
 						<div className=''>
-							Телефон: (473) 253 86 51 <br /> E-mail: main@vsau.ru <br />
-							Адрес: ул. Мичурина, 1, ауд.101
+							Телефон:{' '}
+							<a className='hover:underline' href='tel:+7-(473)-253-78-74'>
+								+7-(473)-253-78-74
+							</a>{' '}
+							<br /> E-mail: entrance@vsau.ru
 						</div>
 					</div>
 				</div>
