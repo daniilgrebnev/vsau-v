@@ -1,4 +1,5 @@
 import { getMenu, IMenuItem } from '@/api/api'
+import { CupIcon } from '@/icons/CupIcon'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -29,6 +30,20 @@ export const MainWidgets = () => {
 	}, [])
 	return (
 		<div className='w-full max-md:block flex gap-[10px] justify-between flex-wrap'>
+			<Link
+				to={`/documents`}
+				style={{ gridTemplateColumns: '20% 80%' }}
+				className='grid  max-md:w-full gap-[10px] bg-white py-4 px-2 rounded-[15px] w-[32%] hover:opacity-80 active:opacity-50 transition-all'
+			>
+				<div className='flex items-center justify-end'>
+					<div className='bg-[#1495D9] w-[40px] aspect-square flex items-center justify-center  rounded-[10px]'>
+						<CupIcon width={24} height={24} fill='white' />
+					</div>
+				</div>
+				<p className='flex text-[14px] items-center justify-start w-full'>
+					Подать документы
+				</p>
+			</Link>
 			{widgets?.map(w => (
 				<Link
 					to={`/page/${w.id}`}

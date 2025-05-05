@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { AspectIcon } from '../icons/AspectIcon'
 import { ContactsIcon } from '../icons/ContactsIcon'
-import { MenuDocInnerIcon } from '../icons/MenuDocInnerIcon'
 import { MenuDocOkIcon } from '../icons/MenuDocOkIcon'
 import { StudIcon } from '../icons/StudIcon'
 
 import styles from './layout.module.css'
 
+import { CupIcon } from '@/icons/CupIcon'
 import { Link, useLocation } from 'react-router-dom'
 import { getPostContent } from '../api/api'
 
@@ -19,19 +19,20 @@ interface INvItem {
 export const NavBar = ({}) => {
 	const items: INvItem[] = [
 		{
-			name: 'Подать документы',
-			link: `/documents`,
-			icon: <MenuDocInnerIcon fill='#0F91D6' height={25} />,
+			name: 'Правила приема',
+			link: `/reception`,
+			icon: <MenuDocOkIcon fill='#0F91D6' height={25} />,
 		},
 		{
 			name: 'Факультеты',
 			link: `/faculties`,
 			icon: <StudIcon fill='#0F91D6' height={25} />,
 		},
+
 		{
-			name: 'Правила приема',
-			link: `/reception`,
-			icon: <MenuDocOkIcon fill='#0F91D6' height={25} />,
+			name: 'Олимпиады и конкурсы',
+			link: `/page/42396`,
+			icon: <CupIcon fill='#0F91D6' height={25} />,
 		},
 		{
 			name: 'Программы обучения',
