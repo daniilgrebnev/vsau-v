@@ -1,5 +1,5 @@
 import { getMenu, IMenuItem } from '@/api/api'
-import { CupIcon } from '@/icons/CupIcon'
+import { MenuDocInnerIcon } from '@/icons/MenuDocInnerIcon'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -37,7 +37,7 @@ export const MainWidgets = () => {
 			>
 				<div className='flex items-center justify-end'>
 					<div className='bg-[#1495D9] w-[40px] aspect-square flex items-center justify-center  rounded-[10px]'>
-						<CupIcon width={24} height={24} fill='white' />
+						<MenuDocInnerIcon width={24} height={24} fill='white' />
 					</div>
 				</div>
 				<p className='flex text-[14px] items-center justify-start w-full'>
