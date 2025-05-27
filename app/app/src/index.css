@@ -63,6 +63,10 @@ ul {
 	list-style: inside;
 	color: #1495d9;
 }
+ul li a {
+	color: #1494d9bc !important;
+}
 ul li a:hover {
 	text-decoration: underline;
+	color: #1495d9 !important;
 }
