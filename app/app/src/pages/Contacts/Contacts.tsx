@@ -5,7 +5,7 @@ export const Contacts = () => {
 		<div className='px-24 py-6 h-[100%] w-full flex flex-col justify-start items-start gap-10 max-md:px-4 max-md:py-2'>
 			<h2 className='text-[#3F3F3F66] text-3xl '>Контактная информация</h2>
 			<div className='p-8 bg-white '>
-				<h3 className='text-xl mb-10 font-semibold text-[#0F91D6]'>
+				<h3 className='text-xl mb-10 font-normal text-[#0F91D6]'>
 					Телефоны приёмной комиссии: <br />
 					<a className='hover:underline' href='tel:+7-(473)-253-78-74'>
 						+7-(473)-253-78-74
@@ -29,9 +29,22 @@ export const Contacts = () => {
 							том числе для консультирования поступающих из Белгородской области
 							и участников специальной военной операции на территориях Украины,
 							Донецкой Народной Республики, Луганской Народной Республики,
-							Запорожской области и Херсонской области и их детей <br /> E-mail:
-							pre@emd.vsau.ru <br /> Адрес: г. Воронеж, ул. Мичурина, 1, ауд.
-							178
+							Запорожской области и Херсонской области и их детей <br /> E-mail:{' '}
+							<a
+								className={
+									'hover:underline hover:text-[#1495d9] text-[#1494d9bc]'
+								}
+								href='mailto:pre@emd.vsau.ru'
+							>
+								pre@emd.vsau.ru
+							</a>
+							<br /> Адрес:{' '}
+							<a
+								className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]'
+								href='https://yandex.ru/maps/-/CHRKeI~l'
+							>
+								г. Воронеж, ул. Мичурина, 1, ауд. 178
+							</a>
 						</div>
 					</div>
 					<div className='flex flex-col justify-between items-start gap-5 h-full'>
@@ -43,7 +56,20 @@ export const Contacts = () => {
 							обучения – по вопросам приема на целевое обучение
 						</div>
 						<div className=''>
-							Телефон: (473) 253 78 74 <br /> E-mail: celevoe@emd.vsau.ru
+							Телефон:{' '}
+							<a
+								className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]'
+								href='tel:+7-(473)-253-78-74'
+							>
+								+7 (473) 253 78 74
+							</a>{' '}
+							<br /> E-mail:{' '}
+							<a
+								className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]'
+								href='mailto:celevoe@emd.vsau.ru'
+							>
+								celevoe@emd.vsau.ru
+							</a>
 						</div>
 						<div className=''>
 							<span className=' font-semibold text-[#000000]'>
@@ -53,10 +79,19 @@ export const Contacts = () => {
 						</div>
 						<div className=''>
 							Телефон:{' '}
-							<a className='hover:underline' href='tel:+7-(473)-253-78-74'>
+							<a
+								className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]'
+								href='tel:+7-(473)-253-78-74'
+							>
 								+7-(473)-253-78-74
 							</a>{' '}
-							<br /> E-mail: entrance@vsau.ru
+							<br /> E-mail:{' '}
+							<a
+								className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]'
+								href='mailto:entrance@vsau.ru'
+							>
+								entrance@vsau.ru
+							</a>
 						</div>
 					</div>
 				</div>
