@@ -11,9 +11,9 @@ export const Widget = () => {
 		}
 	}
 	return (
-		<div className='w-full max-md:min-h-[auto]   aspect-[3.2/1] bg-blue-200 relative'>
+		<div className='w-full max-md:min-h-[auto]   bg-blue-200 relative'>
 			<img
-				className='w-full absolute inset-0 z-10 h-full'
+				className='w-full  inset-0 z-10 object-cover'
 				src={imgGenerator()}
 				alt='CORP'
 			/>
