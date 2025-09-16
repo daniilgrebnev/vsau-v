@@ -1,0 +1,733 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8"/>
+<TITLE></TITLE>
+<STYLE TYPE="text/css">
+body { background: #ffffff; margin: 0; font-family: Arial; font-size: 8pt; font-style: normal; }
+tr.R0{ height: 15px; }
+tr.R1{ height: 21px; }
+tr.R1 td.R1C1{ font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; }
+tr.R1 td.R7C1{ font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; background-color: #f0fff0; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11{ height: 17px; }
+tr.R11 td.R11C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R11C2{ background-color: #ffffff; text-align: left; }
+tr.R11 td.R11C3{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R16C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #d7f0c7; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R17C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #00ff7f; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R27C0{ text-align: left; }
+tr.R11 td.R27C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #fff0f5; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px double; border-bottom: #000000 1px double; border-right: #000000 1px solid; }
+tr.R11 td.R28C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: left; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R28C3{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R58C1{ font-family: Arial; font-size: 10pt; font-style: normal; background-color: #ffffff; text-align: left; }
+tr.R21{ background-color: #ffffff; height: 5px; }
+tr.R21 td.R21C1{ text-align: left; border-top: #000000 1px double; border-bottom: #000000 1px double; }
+tr.R23{ background-color: #ffffff; height: 4px; }
+tr.R23 td.R23C1{ text-align: left; border-top: #000000 1px double; border-bottom: #000000 1px double; }
+tr.R25{ height: 32px; }
+tr.R25 td.R25C5{ background-color: #ffffff; text-align: left; }
+tr.R4{ background-color: #ffffff; height: 21px; }
+tr.R4 td.R4C1{ font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-align: center; }
+tr.R57{ background-color: #ffffff; height: 15px; }
+tr.R57 td.R57C1{ text-align: left; }
+tr.R8{ height: 33px; }
+tr.R8 td.R13C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R8 td.R13C2{ background-color: #ffffff; text-align: left; }
+tr.R8 td.R8C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #f0fff0; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R8 td.R8C3{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #f0fff0; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R9{ height: 20px; }
+tr.R9 td.R10C1{ font-family: Arial; font-size: 11pt; font-style: normal; font-weight: bold; color: #ff0000; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R9 td.R12C2{ background-color: #ffffff; text-align: left; }
+tr.R9 td.R22C1{ font-family: Arial; font-size: 11pt; font-style: normal; font-weight: bold; background-color: #ffe4e1; text-align: center; border-left: #000000 1px double; border-top: #000000 1px double; border-bottom: #000000 1px double; border-right: #000000 1px double; }
+tr.R9 td.R9C1{ font-family: Arial; font-size: 11pt; font-style: normal; font-weight: bold; color: #ff0000; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; }
+table {table-layout: fixed; padding: 0; padding-left: 2px; vertical-align:bottom; border-collapse:collapse;width: 100%; font-family: Arial; font-size: 8pt; font-style: normal; }
+td { padding: 0; padding-left: 2px; overflow:hidden; vertical-align: bottom;}
+</STYLE>
+<link href="images/style.css" rel="stylesheet" type="text/css"></HEAD><BODY><div id="container"><div id="header"><div id="logo2"><img src="images/logo2.gif" alt="*" height="63px" width="109px"></div><div id="logo3"><a href="index.html"><img src="images/butt_vo.gif" alt="*" height="63px" width="109px"></a></div><div id="logo"><a href="http://vsau.ru/"><img src="images/logo.png" alt="ФГБОУ ВПО Воронежский государственный аграрный университет имени императора Петра I" height="184px" width="184px"></a></div></div><div class="column-right-content"><div class="column-right-content2">
+
+<TABLE style="width:100%; height:0px; " CELLSPACING=0>
+<COL WIDTH=8>
+<COL WIDTH=270>
+<COL WIDTH=101>
+<COL WIDTH=105>
+<COL WIDTH=95>
+<COL WIDTH=90>
+<COL WIDTH=95>
+<COL WIDTH=69>
+<COL WIDTH=98>
+<COL WIDTH=93>
+<COL WIDTH=135>
+<COL>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R1C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Список&nbsp;поступающих</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R1C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">по&nbsp;результатам&nbsp;вступительных&nbsp;испытаний&nbsp;на&nbsp;программы&nbsp;среднего&nbsp;профессионального&nbsp;образования</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R1C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">в&nbsp;2025&nbsp;году</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R4>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R4C1"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R1C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Направление&nbsp;(Специальность):&nbsp;"36.02.01&nbsp;Ветеринария"&nbsp;&nbsp;(на&nbsp;базе&nbsp;11&nbsp;классов)</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R7C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">ВНИМАНИЮ&nbsp;АБИТУРИЕНТОВ</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R8C1" COLSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Этап</SPAN></TD>
+<TD CLASS="R8C3" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">Дата&nbsp;предоставления&nbsp;подлинников&nbsp;документов<BR>в&nbsp;приемную&nbsp;комиссию</SPAN></TD>
+<TD CLASS="R8C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">Дата&nbsp;опубликования&nbsp;приказа<BR>о&nbsp;зачислении&nbsp;в&nbsp;число&nbsp;обучающихся</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R9>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R9C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">ОЧНАЯ&nbsp;ФОРМА&nbsp;ОБУЧЕНИЯ</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R9>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R10C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Для&nbsp;поступающих&nbsp;на&nbsp;бюджетной&nbsp;основе</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R11C1" COLSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Все&nbsp;категории&nbsp;поступающих</SPAN></TD>
+<TD CLASS="R11C3" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">до&nbsp;15.08.2025&nbsp;до&nbsp;12.00</SPAN></TD>
+<TD CLASS="R11C3" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">18.08.2025</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R9>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R10C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Для&nbsp;поступающих&nbsp;на&nbsp;договорной&nbsp;основе</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Все&nbsp;категории&nbsp;поступающих<BR>1&nbsp;этап</SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">до&nbsp;15.08.2025&nbsp;до&nbsp;12.00</SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">18.08.2025</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Все&nbsp;категории&nbsp;поступающих<BR>последующие&nbsp;этапы&nbsp;(приказы)</SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">до&nbsp;25.11.2025&nbsp;до&nbsp;12.00</SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">до&nbsp;01.12.2025</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R16C1" COLSPAN=10>Абитуриенты, выделенные этим цветом - РЕКОМЕНДОВАНЫ К ЗАЧИСЛЕНИЮ на 1 курс</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R17C1" COLSPAN=10>Абитуриенты, выделенные этим цветом - ЗАЧИСЛЕНЫ на 1 курс</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R21>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="width:100%;height:5px;overflow:hidden;">&nbsp;</DIV></TD>
+</TR>
+<TR CLASS=R9>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R22C1" COLSPAN=10>Программа обучения : "36.02.01 Ветеринария на базе 11 кл."</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R23>
+<TD><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="width:100%;height:4px;overflow:hidden;">&nbsp;</DIV></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R8C1" COLSPAN=2 ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">ФИО</SPAN></TD>
+<TD CLASS="R8C1" COLSPAN=2 ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Льготы&nbsp;/&nbsp;<BR>Отличия</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Индивиду-<BR>альные<BR>достижения</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Средний<BR>балл<BR>документа&nbsp;об<BR>образовании</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Всего</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Приоритет&nbsp;<BR>направления</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Оригинал<BR>документа<BR>об&nbsp;<BR>образовании</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Статус</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R25>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R21>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="width:100%;height:5px;overflow:hidden;">&nbsp;</DIV></TD>
+</TR>
+<TR CLASS=R11>
+<TD CLASS="R27C0"><SPAN></SPAN></TD>
+<TD CLASS="R27C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Коммерческое&nbsp;финансирование</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>1. Перцева Злата Сергеевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">5</TD>
+<TD CLASS="R28C3">5</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>2. Абдулова Милена Наримановна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,667</TD>
+<TD CLASS="R28C3">4,667</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>3. Шальнева Ульяна Игоревна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,615</TD>
+<TD CLASS="R28C3">4,615</TD>
+<TD CLASS="R28C3">1 ИЗ 2</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>4. Глушкова Екатерина Сергеевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,571</TD>
+<TD CLASS="R28C3">4,571</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>5. Яковлева Ольга Сергеевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,539</TD>
+<TD CLASS="R28C3">4,539</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>6. Султонов Хилол Таджибаевич</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,5</TD>
+<TD CLASS="R28C3">4,5</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>7. Колядина Валерия Евгеньевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,462</TD>
+<TD CLASS="R28C3">4,462</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>8. Бородина Варвара Алексеевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,444</TD>
+<TD CLASS="R28C3">4,444</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>9. Петросян Диана Тиграновна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,375</TD>
+<TD CLASS="R28C3">4,375</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>10. Калинина Софья Павловна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,308</TD>
+<TD CLASS="R28C3">4,308</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>11. Бойко Анастасия Евгеньевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,25</TD>
+<TD CLASS="R28C3">4,25</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>12. Ретюнских Полина Сергеевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,25</TD>
+<TD CLASS="R28C3">4,25</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>13. Сотникова Дарья Олеговна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,231</TD>
+<TD CLASS="R28C3">4,231</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>14. Двуреченская Дарья Алексеевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,154</TD>
+<TD CLASS="R28C3">4,154</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>15. Трухачев Георгий Евгеньевич</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,133</TD>
+<TD CLASS="R28C3">4,133</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>16. Чулков Артём Владимирович</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,083</TD>
+<TD CLASS="R28C3">4,083</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>17. Юнгов Даниил Васильевич</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,071</TD>
+<TD CLASS="R28C3">4,071</TD>
+<TD CLASS="R28C3">1 ИЗ 2</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>18. Краснощеких Светлана Николаевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,067</TD>
+<TD CLASS="R28C3">4,067</TD>
+<TD CLASS="R28C3">2 ИЗ 2</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>19. Кузнецова Наталья Николаевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4</TD>
+<TD CLASS="R28C3">4</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>20. Самойленко Кирилл Андреевич</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4</TD>
+<TD CLASS="R28C3">4</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>21. Ковцур Марина Витальевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,923</TD>
+<TD CLASS="R28C3">3,923</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>22. Озерец Дмитрий Михайлович</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,923</TD>
+<TD CLASS="R28C3">3,923</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>23. Петрова София Дмитриевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,923</TD>
+<TD CLASS="R28C3">3,923</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>24. Барагин Виктория</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,8</TD>
+<TD CLASS="R28C3">3,8</TD>
+<TD CLASS="R28C3">1 ИЗ 2</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>25. Артюшкина Ксения Андреевна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,769</TD>
+<TD CLASS="R28C3">3,769</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>26. Садовская Олеся Александровна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,615</TD>
+<TD CLASS="R28C3">3,615</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>27. Пешкова Ирина Романовна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,563</TD>
+<TD CLASS="R28C3">3,563</TD>
+<TD CLASS="R28C3">1 ИЗ 2</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>28. Копылова Маргарита Викторовна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,385</TD>
+<TD CLASS="R28C3">3,385</TD>
+<TD CLASS="R28C3">1 ИЗ 2</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>29. Малютова Ирина Владиславовна</TD>
+<TD CLASS="R28C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R57>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R57C1"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R58C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Обновлено&nbsp;24.07.2025&nbsp;9:43:16&nbsp;</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+</TABLE>
+</div></div></div></BODY>
+</HTML>

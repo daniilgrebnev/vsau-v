@@ -1,0 +1,4285 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8"/>
+<TITLE></TITLE>
+<STYLE TYPE="text/css">
+body { background: #ffffff; margin: 0; font-family: Arial; font-size: 8pt; font-style: normal; }
+tr.R0{ height: 15px; }
+tr.R1{ height: 21px; }
+tr.R1 td.R1C1{ font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; }
+tr.R1 td.R7C1{ font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; background-color: #f0fff0; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11{ height: 17px; }
+tr.R11 td.R11C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R11C2{ background-color: #ffffff; text-align: left; }
+tr.R11 td.R11C3{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R16C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #d7f0c7; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R17C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #00ff7f; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R27C0{ text-align: left; }
+tr.R11 td.R27C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #fff0f5; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px double; border-bottom: #000000 1px double; border-right: #000000 1px solid; }
+tr.R11 td.R331C1{ font-family: Arial; font-size: 10pt; font-style: normal; background-color: #ffffff; text-align: left; }
+tr.R11 td.R34C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: left; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R11 td.R34C3{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R21{ background-color: #ffffff; height: 5px; }
+tr.R21 td.R21C1{ text-align: left; border-top: #000000 1px double; border-bottom: #000000 1px double; }
+tr.R23{ background-color: #ffffff; height: 4px; }
+tr.R23 td.R23C1{ text-align: left; border-top: #000000 1px double; border-bottom: #000000 1px double; }
+tr.R25{ height: 32px; }
+tr.R25 td.R25C5{ background-color: #ffffff; text-align: left; }
+tr.R28{ height: 81px; }
+tr.R28 td.R28C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: left; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R28 td.R28C3{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R330{ background-color: #ffffff; height: 15px; }
+tr.R330 td.R330C1{ text-align: left; }
+tr.R4{ background-color: #ffffff; height: 21px; }
+tr.R4 td.R4C1{ font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; text-align: center; }
+tr.R8{ height: 33px; }
+tr.R8 td.R13C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R8 td.R13C2{ background-color: #ffffff; text-align: left; }
+tr.R8 td.R192C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #d7f0c7; text-align: left; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R8 td.R192C3{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #d7f0c7; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R8 td.R8C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #f0fff0; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R8 td.R8C3{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #f0fff0; text-align: center; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R9{ height: 20px; }
+tr.R9 td.R10C1{ font-family: Arial; font-size: 11pt; font-style: normal; font-weight: bold; color: #ff0000; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R9 td.R12C2{ background-color: #ffffff; text-align: left; }
+tr.R9 td.R22C1{ font-family: Arial; font-size: 11pt; font-style: normal; font-weight: bold; background-color: #ffe4e1; text-align: center; border-left: #000000 1px double; border-top: #000000 1px double; border-bottom: #000000 1px double; border-right: #000000 1px double; }
+tr.R9 td.R9C1{ font-family: Arial; font-size: 11pt; font-style: normal; font-weight: bold; color: #ff0000; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; }
+tr.R93{ height: 113px; }
+tr.R93 td.R93C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: left; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+tr.R93 td.R93C3{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #ffffff; text-align: center; vertical-align: middle; border-left: #000000 1px solid; border-top: #000000 1px solid; border-bottom: #000000 1px solid; border-right: #000000 1px solid; }
+table {table-layout: fixed; padding: 0; padding-left: 2px; vertical-align:bottom; border-collapse:collapse;width: 100%; font-family: Arial; font-size: 8pt; font-style: normal; }
+td { padding: 0; padding-left: 2px; overflow:hidden; vertical-align: bottom;}
+</STYLE>
+<link href="images/style.css" rel="stylesheet" type="text/css"></HEAD><BODY><div id="container"><div id="header"><div id="logo2"><img src="images/logo2.gif" alt="*" height="63px" width="109px"></div><div id="logo3"><a href="index.html"><img src="images/butt_vo.gif" alt="*" height="63px" width="109px"></a></div><div id="logo"><a href="http://vsau.ru/"><img src="images/logo.png" alt="ФГБОУ ВПО Воронежский государственный аграрный университет имени императора Петра I" height="184px" width="184px"></a></div></div><div class="column-right-content"><div class="column-right-content2">
+
+<TABLE style="width:100%; height:0px; " CELLSPACING=0>
+<COL WIDTH=8>
+<COL WIDTH=270>
+<COL WIDTH=101>
+<COL WIDTH=105>
+<COL WIDTH=95>
+<COL WIDTH=90>
+<COL WIDTH=95>
+<COL WIDTH=69>
+<COL WIDTH=98>
+<COL WIDTH=93>
+<COL WIDTH=135>
+<COL>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R1C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Список&nbsp;поступающих</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R1C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">по&nbsp;результатам&nbsp;вступительных&nbsp;испытаний&nbsp;на&nbsp;программы&nbsp;среднего&nbsp;профессионального&nbsp;образования</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R1C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">в&nbsp;2025&nbsp;году</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R4>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R4C1"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R1C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Направление&nbsp;(Специальность):&nbsp;"21.02.20&nbsp;Прикладная&nbsp;геодезия"&nbsp;&nbsp;(на&nbsp;базе&nbsp;9&nbsp;классов)</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R1>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R7C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">ВНИМАНИЮ&nbsp;АБИТУРИЕНТОВ</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R8C1" COLSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Этап</SPAN></TD>
+<TD CLASS="R8C3" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">Дата&nbsp;предоставления&nbsp;подлинников&nbsp;документов<BR>в&nbsp;приемную&nbsp;комиссию</SPAN></TD>
+<TD CLASS="R8C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">Дата&nbsp;опубликования&nbsp;приказа<BR>о&nbsp;зачислении&nbsp;в&nbsp;число&nbsp;обучающихся</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R9>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R9C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">ОЧНАЯ&nbsp;ФОРМА&nbsp;ОБУЧЕНИЯ</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R9>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R10C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Для&nbsp;поступающих&nbsp;на&nbsp;бюджетной&nbsp;основе</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R11C1" COLSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Все&nbsp;категории&nbsp;поступающих</SPAN></TD>
+<TD CLASS="R11C3" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">до&nbsp;15.08.2025&nbsp;до&nbsp;12.00</SPAN></TD>
+<TD CLASS="R11C3" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">18.08.2025</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R9>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R10C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Для&nbsp;поступающих&nbsp;на&nbsp;договорной&nbsp;основе</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Все&nbsp;категории&nbsp;поступающих<BR>1&nbsp;этап</SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">до&nbsp;15.08.2025&nbsp;до&nbsp;12.00</SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">18.08.2025</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Все&nbsp;категории&nbsp;поступающих<BR>последующие&nbsp;этапы&nbsp;(приказы)</SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">до&nbsp;25.11.2025&nbsp;до&nbsp;12.00</SPAN></TD>
+<TD CLASS="R13C1" COLSPAN=4><SPAN STYLE="white-space:nowrap;max-width:0px;">до&nbsp;01.12.2025</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R16C1" COLSPAN=10>Абитуриенты, выделенные этим цветом - РЕКОМЕНДОВАНЫ К ЗАЧИСЛЕНИЮ на 1 курс</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R17C1" COLSPAN=10>Абитуриенты, выделенные этим цветом - ЗАЧИСЛЕНЫ на 1 курс</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R0>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R21>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R21C1"><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="width:100%;height:5px;overflow:hidden;">&nbsp;</DIV></TD>
+</TR>
+<TR CLASS=R9>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R22C1" COLSPAN=10>Программа обучения : "21.02.20   Прикладная геодезия на базе 9 кл."</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R23>
+<TD><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD CLASS="R23C1"><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:4px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="width:100%;height:4px;overflow:hidden;">&nbsp;</DIV></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R8C1" COLSPAN=2 ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">ФИО</SPAN></TD>
+<TD CLASS="R8C1" COLSPAN=2 ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Льготы&nbsp;/&nbsp;<BR>Отличия</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Индивиду-<BR>альные<BR>достижения</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Средний<BR>балл<BR>документа&nbsp;об<BR>образовании</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Всего</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Приоритет&nbsp;<BR>направления</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Оригинал<BR>документа<BR>об&nbsp;<BR>образовании</SPAN></TD>
+<TD CLASS="R8C1" ROWSPAN=2><SPAN STYLE="white-space:nowrap;max-width:0px;">Статус</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R25>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R21>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="width:100%;height:5px;overflow:hidden;">&nbsp;</DIV></TD>
+</TR>
+<TR CLASS=R11>
+<TD CLASS="R27C0"><SPAN></SPAN></TD>
+<TD CLASS="R27C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Бюджетное&nbsp;финансирование</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>1. 000003405</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,833</TD>
+<TD CLASS="R28C3">4,833</TD>
+<TD CLASS="R28C3">1 ИЗ 2</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>2. 000003246</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,75</TD>
+<TD CLASS="R28C3">4,75</TD>
+<TD CLASS="R28C3">4 ИЗ 5</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>3. 000002977</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,588</TD>
+<TD CLASS="R28C3">4,588</TD>
+<TD CLASS="R28C3">1 ИЗ 1</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>4. 000004007</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,059</TD>
+<TD CLASS="R28C3">4,059</TD>
+<TD CLASS="R28C3">1 ИЗ 2</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>5. 000003085</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,938</TD>
+<TD CLASS="R28C3">3,938</TD>
+<TD CLASS="R28C3">1 ИЗ 2</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>6. 000003189</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,696</TD>
+<TD CLASS="R28C3">3,696</TD>
+<TD CLASS="R28C3">1 ИЗ 2</TD>
+<TD CLASS="R28C3">Да</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>7. Гришечко Людмила Егоровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">4 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>8. Гусаков Юрий Павлович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>9. Данилина Варвара Руслановна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>10. Князева Диана Николаевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>11. Литвинова Анастасия Витальевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>12. Олефирова Елена Сергеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>13. Теплякова Олеся Андреевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>14. Горбач Даниил Евгеньевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,955</TD>
+<TD CLASS="R34C3">4,955</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>15. Попова Светлана Сергеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,95</TD>
+<TD CLASS="R34C3">4,95</TD>
+<TD CLASS="R34C3">4 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>16. ЧЕРНОВА МАРИЯ ДЕНИСОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,95</TD>
+<TD CLASS="R34C3">4,95</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>17. Воропаев Семён Витальевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,947</TD>
+<TD CLASS="R34C3">4,947</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>18. Портнова Ирина Валерьевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,944</TD>
+<TD CLASS="R34C3">4,944</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>19. Плотникова Альбина Евгеньевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,9</TD>
+<TD CLASS="R34C3">4,9</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>20. Стеблева Арина Евгеньевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,9</TD>
+<TD CLASS="R34C3">4,9</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>21. ЛИХОВСКИХ СОФИЯ ГЕРМАНОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,882</TD>
+<TD CLASS="R34C3">4,882</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>22. Недосекина Варвара Евгеньевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,882</TD>
+<TD CLASS="R34C3">4,882</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>23. Литвинова Мария Петровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,842</TD>
+<TD CLASS="R34C3">4,842</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>24. Чернышков Игорь Алексеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,842</TD>
+<TD CLASS="R34C3">4,842</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>25. Фрибус Зоя Алексеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,824</TD>
+<TD CLASS="R34C3">4,824</TD>
+<TD CLASS="R34C3">1 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>26. Щербик Алексей Сергеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,81</TD>
+<TD CLASS="R34C3">4,81</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>27. Быканов Дмитрий Андреевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,765</TD>
+<TD CLASS="R34C3">4,765</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>28. Рындина Мария Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,765</TD>
+<TD CLASS="R34C3">4,765</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>29. Николаенко София Васильевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,762</TD>
+<TD CLASS="R34C3">4,762</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>30. Бахарев Матвей Андреевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,737</TD>
+<TD CLASS="R34C3">4,737</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>31. Черный Артём Андреевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,714</TD>
+<TD CLASS="R34C3">4,714</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>32. Лацыгина Арина Артемовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,708</TD>
+<TD CLASS="R34C3">4,708</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>33. Олемская София Андреевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,706</TD>
+<TD CLASS="R34C3">4,706</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>34. Иванов Арсений Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,682</TD>
+<TD CLASS="R34C3">4,682</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>35. МАРЧЕНКО ВИКТОРИЯ АЛЕКСАНДРОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,682</TD>
+<TD CLASS="R34C3">4,682</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>36. Кротова Валерия Вячеславовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,667</TD>
+<TD CLASS="R34C3">4,667</TD>
+<TD CLASS="R34C3">1 ИЗ 5</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>37. Вердова Софья Сергеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,65</TD>
+<TD CLASS="R34C3">4,65</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>38. Догаева Полина Павловна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,647</TD>
+<TD CLASS="R34C3">4,647</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>39. Мамонтова Дарья Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,647</TD>
+<TD CLASS="R34C3">4,647</TD>
+<TD CLASS="R34C3">1 ИЗ 4</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>40. Дмитриев Данила Геннадьевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,632</TD>
+<TD CLASS="R34C3">4,632</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>41. Селиванова Софья Игоревна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,625</TD>
+<TD CLASS="R34C3">4,625</TD>
+<TD CLASS="R34C3">1 ИЗ 4</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>42. ЗАБОЕВА ЕВГЕНИЯ ВАСИЛЬЕВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,611</TD>
+<TD CLASS="R34C3">4,611</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>43. Иванникова Анастасия Олеговна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,591</TD>
+<TD CLASS="R34C3">4,591</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>44. Перегубко Дарья Витальевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,588</TD>
+<TD CLASS="R34C3">4,588</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>45. Тарасова Анна Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,583</TD>
+<TD CLASS="R34C3">4,583</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>46. БАБИЧЕВА ВИКТОРИЯ АЛЕКСЕЕВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,579</TD>
+<TD CLASS="R34C3">4,579</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>47. Кожанов Иван Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,579</TD>
+<TD CLASS="R34C3">4,579</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>48. Куприянов Артём Сергеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,563</TD>
+<TD CLASS="R34C3">4,563</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>49. КОСТИНА ВАЛЕРИЯ АРТЁМОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,56</TD>
+<TD CLASS="R34C3">4,56</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>50. Жданов Егор Андреевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">3 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>51. Кулинцов Дмитрий Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>52. Якименко Виктория Евгеньевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>53. Шержуков Кирилл Дмитриевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,529</TD>
+<TD CLASS="R34C3">4,529</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>54. Овсянкина Валерия Витальевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,526</TD>
+<TD CLASS="R34C3">4,526</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>55. МИХАЙЛОВ ВИКТОР МИХАЙЛОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,5</TD>
+<TD CLASS="R34C3">4,5</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>56. Панов Тимур Алексеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,5</TD>
+<TD CLASS="R34C3">4,5</TD>
+<TD CLASS="R34C3">3 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>57. Логвинова Дарья Владимировна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,476</TD>
+<TD CLASS="R34C3">4,476</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>58. Малахов Владислав Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,476</TD>
+<TD CLASS="R34C3">4,476</TD>
+<TD CLASS="R34C3">2 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>59. Ногина Оксана Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,474</TD>
+<TD CLASS="R34C3">4,474</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>60. ШЕСТАКОВ АРСЕНИЙ АНДРЕЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,458</TD>
+<TD CLASS="R34C3">4,458</TD>
+<TD CLASS="R34C3">4 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>61. Крашенинникова Ксения Эдуардовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,45</TD>
+<TD CLASS="R34C3">4,45</TD>
+<TD CLASS="R34C3">1 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>62. Статывка Любовь Андреевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,45</TD>
+<TD CLASS="R34C3">4,45</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>63. Шульгина Анастасия Владимировна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,444</TD>
+<TD CLASS="R34C3">4,444</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>64. ШАТАЛОВА ЮЛИЯ ДМИТРИЕВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,435</TD>
+<TD CLASS="R34C3">4,435</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>65. ЗИННАТУЛЛИН ТИМУР МАКСИМОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,429</TD>
+<TD CLASS="R34C3">4,429</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R93>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R93C1" COLSPAN=2>66. Лыков Станислав Андреевич</TD>
+<TD CLASS="R93C3" COLSPAN=2>Дети-инвалиды, инвалиды I и II групп, которым согласно заключению федерального учреждения медико-социальной экспертизы не противопоказано обучение</TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD CLASS="R93C3">4,421</TD>
+<TD CLASS="R93C3">4,421</TD>
+<TD CLASS="R93C3">1 ИЗ 4</TD>
+<TD CLASS="R93C3">Да</TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>67. МОЗГОВОЙ МИХАИЛ ФЕДОРОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,421</TD>
+<TD CLASS="R34C3">4,421</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>68. Кулько Екатерина Сергеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,412</TD>
+<TD CLASS="R34C3">4,412</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>69. ЧУВИЛЬСКИЙ НИКИТА АЛЕКСЕЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,412</TD>
+<TD CLASS="R34C3">4,412</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>70. Еремин Дмитрий Евгеньевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,4</TD>
+<TD CLASS="R34C3">4,4</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>71. Пикалова Софья Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,4</TD>
+<TD CLASS="R34C3">4,4</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>72. Агафонцева Полина Дмитриевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,389</TD>
+<TD CLASS="R34C3">4,389</TD>
+<TD CLASS="R34C3">2 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>73. Полежаев Виктор Олегович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,381</TD>
+<TD CLASS="R34C3">4,381</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>74. Молчанов Максим Вячеславович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,375</TD>
+<TD CLASS="R34C3">4,375</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>75. Прохоренко Софья Евгеньевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,375</TD>
+<TD CLASS="R34C3">4,375</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>76. Чумак Валерия Станиславовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,375</TD>
+<TD CLASS="R34C3">4,375</TD>
+<TD CLASS="R34C3">1 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>77. Мохов Савелий Степанович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,368</TD>
+<TD CLASS="R34C3">4,368</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>78. Буслов Артём Валерьевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,364</TD>
+<TD CLASS="R34C3">4,364</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>79. Гончаров Владислав Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,36</TD>
+<TD CLASS="R34C3">4,36</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>80. Балеевских Антон Андреевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,353</TD>
+<TD CLASS="R34C3">4,353</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>81. КРЕТИНИН КИРИЛЛ ВИТАЛЬЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,35</TD>
+<TD CLASS="R34C3">4,35</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>82. Грезева Анастасия Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,316</TD>
+<TD CLASS="R34C3">4,316</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>83. Широкожухов Станислав Леонидович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,3</TD>
+<TD CLASS="R34C3">4,3</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>84. Михлюев Матвей Максимович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,294</TD>
+<TD CLASS="R34C3">4,294</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>85. ПОХВАЩЕВ СТАНИСЛАВ ВИКТОРОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,294</TD>
+<TD CLASS="R34C3">4,294</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>86. Дубинин Богдан Вячеславович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,278</TD>
+<TD CLASS="R34C3">4,278</TD>
+<TD CLASS="R34C3">1 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>87. Латынина Владислава Сергеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,273</TD>
+<TD CLASS="R34C3">4,273</TD>
+<TD CLASS="R34C3">1 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>88. Труфанова Виктория Дмитриевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,263</TD>
+<TD CLASS="R34C3">4,263</TD>
+<TD CLASS="R34C3">1 ИЗ 4</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>89. Чихирев Дмитрий Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,263</TD>
+<TD CLASS="R34C3">4,263</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>90. Ушатова Евгения Дмитриевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,25</TD>
+<TD CLASS="R34C3">4,25</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>91. Щербатых Владислав Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,25</TD>
+<TD CLASS="R34C3">4,25</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>92. Турбанов Демид Витальевич</TD>
+<TD CLASS="R34C3" COLSPAN=2>Инвалид 3-ей группы</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,235</TD>
+<TD CLASS="R34C3">4,235</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>93. КУЛИКОВ ВЯЧЕСЛАВ АРТЕМОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,227</TD>
+<TD CLASS="R34C3">4,227</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>94. Мизембаев Роман Русланович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,222</TD>
+<TD CLASS="R34C3">4,222</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>95. Садыков Дмитрий Витальевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,222</TD>
+<TD CLASS="R34C3">4,222</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>96. Торба Дарья Андреевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,222</TD>
+<TD CLASS="R34C3">4,222</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>97. Черничкин Алексей Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,222</TD>
+<TD CLASS="R34C3">4,222</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>98. Веретенников Семён Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,211</TD>
+<TD CLASS="R34C3">4,211</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>99. Меньших Эмилия Юрьевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,211</TD>
+<TD CLASS="R34C3">4,211</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>100. Фоменко Максим Петрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,2</TD>
+<TD CLASS="R34C3">4,2</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>101. Гамбарова Самира Раминовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,191</TD>
+<TD CLASS="R34C3">4,191</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>102. Струков Владислав Владимирович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,191</TD>
+<TD CLASS="R34C3">4,191</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>103. ПОЗНОВ МАТВЕЙ АЛЕКСАНДРОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,167</TD>
+<TD CLASS="R34C3">4,167</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>104. Ивлев Дмитрий Сергеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,136</TD>
+<TD CLASS="R34C3">4,136</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>105. Котенко Вероника Андреевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,118</TD>
+<TD CLASS="R34C3">4,118</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>106. Куницын Богдан Алексеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,105</TD>
+<TD CLASS="R34C3">4,105</TD>
+<TD CLASS="R34C3">5 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>107. Разбоев Андрей Дмитриевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,095</TD>
+<TD CLASS="R34C3">4,095</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>108. Рожков Антон Вячеславович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,091</TD>
+<TD CLASS="R34C3">4,091</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>109. КОТЛЯРОВ ПАВЕЛ ГЕННАДЬЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,063</TD>
+<TD CLASS="R34C3">4,063</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>110. Семикина Екатерина Игоревна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,059</TD>
+<TD CLASS="R34C3">4,059</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>111. Фрида Артур Дмитриевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,05</TD>
+<TD CLASS="R34C3">4,05</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>112. Марков Андрей Михайлович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,046</TD>
+<TD CLASS="R34C3">4,046</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>113. Дрокина Анна Сергеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>114. НАУМОВ АЛЕКСЕЙ ЮРЬЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">5 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>115. Никитина Анжелика Евгеньевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>116. Рожкова Маргарита Алексеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>117. Тюрина Анастасия Юрьевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>118. ЗЛОБИН АНТОН ПАВЛОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,95</TD>
+<TD CLASS="R34C3">3,95</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>119. СВИРИДОВ КИРИЛЛ АЛЕКСАНДРОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,95</TD>
+<TD CLASS="R34C3">3,95</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>120. Скурыбин Алексей Геннадьевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,941</TD>
+<TD CLASS="R34C3">3,941</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>121. Чеботарев Дмитрий Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,909</TD>
+<TD CLASS="R34C3">3,909</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>122. Алексеева Дарья Алексеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">1 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>123. Батищев Иван Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>124. Черненко Дарья Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,895</TD>
+<TD CLASS="R34C3">3,895</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>125. Тевлянто Владимир Станиславович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,842</TD>
+<TD CLASS="R34C3">3,842</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>126. Хазарян Артур Дикранович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,824</TD>
+<TD CLASS="R34C3">3,824</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>127. ЛЮКОВА МИЛЕНА ЕВГЕНЬЕВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,762</TD>
+<TD CLASS="R34C3">3,762</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>128. Гранкин Артём Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,727</TD>
+<TD CLASS="R34C3">3,727</TD>
+<TD CLASS="R34C3">4 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>129. ГРАЧЕВ ВЛАДИСЛАВ АНТОНОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,727</TD>
+<TD CLASS="R34C3">3,727</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>130. Шахова Дарья Васильевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,682</TD>
+<TD CLASS="R34C3">3,682</TD>
+<TD CLASS="R34C3">3 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>131. ИВАНОВ ДМИТРИЙ ЕВГЕНЬЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,636</TD>
+<TD CLASS="R34C3">3,636</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>132. Колесников Кирилл Сергеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,632</TD>
+<TD CLASS="R34C3">3,632</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>133. Замятин Владислав Денисович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,6</TD>
+<TD CLASS="R34C3">3,6</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>134. Дуванов Матвей Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,591</TD>
+<TD CLASS="R34C3">3,591</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>135. Петрин Илья Дмитриевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,588</TD>
+<TD CLASS="R34C3">3,588</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>136. БАРЧЕНКОВА АЛИСА ВАДИМОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,579</TD>
+<TD CLASS="R34C3">3,579</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>137. ФЕДОРЕЕВА ЕЛЕНА АЛЕКСАНДРОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,579</TD>
+<TD CLASS="R34C3">3,579</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R93>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R93C1" COLSPAN=2>138. Литвиненко Виктор Сергеевич</TD>
+<TD CLASS="R93C3" COLSPAN=2>Дети-инвалиды, инвалиды I и II групп, которым согласно заключению федерального учреждения медико-социальной экспертизы не противопоказано обучение</TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD CLASS="R93C3">3,563</TD>
+<TD CLASS="R93C3">3,563</TD>
+<TD CLASS="R93C3">1 ИЗ 2</TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>139. Умаров Усмон Раджабович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,522</TD>
+<TD CLASS="R34C3">3,522</TD>
+<TD CLASS="R34C3">3 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>140. Мухаббатов Умарджон Фахториддинович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,455</TD>
+<TD CLASS="R34C3">3,455</TD>
+<TD CLASS="R34C3">3 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>141. Торжинский Кирилл Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,45</TD>
+<TD CLASS="R34C3">3,45</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>142. Ноздрин Никита Олегович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,412</TD>
+<TD CLASS="R34C3">3,412</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>143. Удовитченко Маргарита Рошадовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,412</TD>
+<TD CLASS="R34C3">3,412</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>144. ШАМИН РОМАН АЛЕКСАНДРОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,412</TD>
+<TD CLASS="R34C3">3,412</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>145. Кудрявцев Никита Алексеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,409</TD>
+<TD CLASS="R34C3">3,409</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>146. Серганов Павел Константинович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,4</TD>
+<TD CLASS="R34C3">3,4</TD>
+<TD CLASS="R34C3">1 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>147. КЛЕЦ ЮЛИЯ СЕРГЕЕВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,294</TD>
+<TD CLASS="R34C3">3,294</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>148. Елфимова Маргарита Романовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>149. КАНУННИКОВА СОФЬЯ АЛЕКСАНДРОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>150. Меркулов Роман Павлович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R21>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="position:relative; height:5px;width: 100%; overflow:hidden;"><SPAN></SPAN></DIV></TD>
+<TD><DIV STYLE="width:100%;height:5px;overflow:hidden;">&nbsp;</DIV></TD>
+</TR>
+<TR CLASS=R11>
+<TD CLASS="R27C0"><SPAN></SPAN></TD>
+<TD CLASS="R27C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Коммерческое&nbsp;финансирование</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>1. 000003405</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,833</TD>
+<TD CLASS="R28C3">4,833</TD>
+<TD CLASS="R28C3">2 ИЗ 2</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>2. 000004007</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">4,059</TD>
+<TD CLASS="R28C3">4,059</TD>
+<TD CLASS="R28C3">2 ИЗ 2</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>3. 000003085</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,938</TD>
+<TD CLASS="R28C3">3,938</TD>
+<TD CLASS="R28C3">2 ИЗ 2</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R28>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R28C1" COLSPAN=2>4. 000003189</TD>
+<TD CLASS="R28C3" COLSPAN=2>Дети лиц, принимавших участие в СВО за исключением погибших, получивших увечье или заболевание</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3">3,696</TD>
+<TD CLASS="R28C3">3,696</TD>
+<TD CLASS="R28C3">2 ИЗ 2</TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD CLASS="R28C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>5. Данилина Варвара Руслановна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>6. Князева Диана Николаевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">5</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>7. Горбач Даниил Евгеньевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,955</TD>
+<TD CLASS="R34C3">4,955</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>8. Фрибус Зоя Алексеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,824</TD>
+<TD CLASS="R34C3">4,824</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>9. Кротова Валерия Вячеславовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,667</TD>
+<TD CLASS="R34C3">4,667</TD>
+<TD CLASS="R34C3">5 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>10. Догаева Полина Павловна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,647</TD>
+<TD CLASS="R34C3">4,647</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>11. Мамонтова Дарья Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,647</TD>
+<TD CLASS="R34C3">4,647</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>12. Селиванова Софья Игоревна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,625</TD>
+<TD CLASS="R34C3">4,625</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>13. Ткаченко Мария Евгеньевна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,588</TD>
+<TD CLASS="R192C3">4,588</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>14. Жданов Егор Андреевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">5 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>15. Кулинцов Дмитрий Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>16. Якименко Виктория Евгеньевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">4,55</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>17. Овсянкина Валерия Витальевна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,526</TD>
+<TD CLASS="R192C3">4,526</TD>
+<TD CLASS="R192C3">2 ИЗ 2</TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>18. Ткаченко Михаил Евгеньевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,5</TD>
+<TD CLASS="R192C3">4,5</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>19. Голбай Дарья Сергеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,476</TD>
+<TD CLASS="R34C3">4,476</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>20. Малахов Владислав Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,476</TD>
+<TD CLASS="R34C3">4,476</TD>
+<TD CLASS="R34C3">5 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>21. ШЕСТАКОВ АРСЕНИЙ АНДРЕЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,458</TD>
+<TD CLASS="R34C3">4,458</TD>
+<TD CLASS="R34C3">5 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>22. Крашенинникова Ксения Эдуардовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,45</TD>
+<TD CLASS="R34C3">4,45</TD>
+<TD CLASS="R34C3">2 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>23. Шульгина Анастасия Владимировна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,444</TD>
+<TD CLASS="R34C3">4,444</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>24. ЗИННАТУЛЛИН ТИМУР МАКСИМОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,429</TD>
+<TD CLASS="R34C3">4,429</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>25. Иваненко Кирилл Викторович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,429</TD>
+<TD CLASS="R34C3">4,429</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>26. Лыга Иван Александрович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,429</TD>
+<TD CLASS="R192C3">4,429</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>27. САКАРДИН ДМИТРИЙ СЕРГЕЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,429</TD>
+<TD CLASS="R34C3">4,429</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R93>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R93C1" COLSPAN=2>28. Лыков Станислав Андреевич</TD>
+<TD CLASS="R93C3" COLSPAN=2>Дети-инвалиды, инвалиды I и II групп, которым согласно заключению федерального учреждения медико-социальной экспертизы не противопоказано обучение</TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD CLASS="R93C3">4,421</TD>
+<TD CLASS="R93C3">4,421</TD>
+<TD CLASS="R93C3">2 ИЗ 4</TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>29. ЛУКЬЯНЧИКОВ ДАНИИЛ АЛЕКСЕЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,412</TD>
+<TD CLASS="R34C3">4,412</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>30. Еремин Дмитрий Евгеньевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,4</TD>
+<TD CLASS="R34C3">4,4</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>31. Агафонцева Полина Дмитриевна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,389</TD>
+<TD CLASS="R192C3">4,389</TD>
+<TD CLASS="R192C3">1 ИЗ 5</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>32. Молчанов Максим Вячеславович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,375</TD>
+<TD CLASS="R192C3">4,375</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>33. Чумак Валерия Станиславовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,375</TD>
+<TD CLASS="R34C3">4,375</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>34. Буслов Артём Валерьевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,364</TD>
+<TD CLASS="R34C3">4,364</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>35. Гончаров Владислав Александрович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,36</TD>
+<TD CLASS="R192C3">4,36</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>36. Иванкина Дарья Сергеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,353</TD>
+<TD CLASS="R34C3">4,353</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>37. Ногтиков Илья Романович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,313</TD>
+<TD CLASS="R34C3">4,313</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>38. Кореневских Илья Александрович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,3</TD>
+<TD CLASS="R192C3">4,3</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>39. Молотков Дмитрий Константинович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,3</TD>
+<TD CLASS="R34C3">4,3</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>40. Широкожухов Станислав Леонидович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,3</TD>
+<TD CLASS="R34C3">4,3</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>41. Михлюев Матвей Максимович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,294</TD>
+<TD CLASS="R34C3">4,294</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>42. ПОХВАЩЕВ СТАНИСЛАВ ВИКТОРОВИЧ</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,294</TD>
+<TD CLASS="R192C3">4,294</TD>
+<TD CLASS="R192C3">1 ИЗ 3</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>43. Дубинин Богдан Вячеславович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,278</TD>
+<TD CLASS="R34C3">4,278</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>44. Латынина Владислава Сергеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,273</TD>
+<TD CLASS="R34C3">4,273</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>45. Мишкина Ангелина Ивановна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,263</TD>
+<TD CLASS="R34C3">4,263</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>46. Труфанова Виктория Дмитриевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,263</TD>
+<TD CLASS="R34C3">4,263</TD>
+<TD CLASS="R34C3">2 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>47. Чихирев Дмитрий Александрович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,263</TD>
+<TD CLASS="R192C3">4,263</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>48. БЕЛОЗЁРОВ АНДРЕЙ ВАДИМОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,25</TD>
+<TD CLASS="R34C3">4,25</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>49. Турбанов Демид Витальевич</TD>
+<TD CLASS="R34C3" COLSPAN=2>Инвалид 3-ей группы</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,235</TD>
+<TD CLASS="R34C3">4,235</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>50. КУЛИКОВ ВЯЧЕСЛАВ АРТЕМОВИЧ</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,227</TD>
+<TD CLASS="R192C3">4,227</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>51. Мизембаев Роман Русланович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,222</TD>
+<TD CLASS="R192C3">4,222</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>52. Торба Дарья Андреевна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,222</TD>
+<TD CLASS="R192C3">4,222</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>53. Черничкин Алексей Николаевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,222</TD>
+<TD CLASS="R192C3">4,222</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>54. Бобров Михаил Геннадьевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,211</TD>
+<TD CLASS="R34C3">4,211</TD>
+<TD CLASS="R34C3">3 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>55. Веретенников Семён Николаевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,211</TD>
+<TD CLASS="R192C3">4,211</TD>
+<TD CLASS="R192C3">1 ИЗ 4</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>56. Меньших Эмилия Юрьевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,211</TD>
+<TD CLASS="R34C3">4,211</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>57. ЛЕОНОВА ВИКТОРИЯ АЛЕКСАНДРОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,2</TD>
+<TD CLASS="R34C3">4,2</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>58. Маркин Сергей Павлович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,2</TD>
+<TD CLASS="R192C3">4,2</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>59. Фоменко Максим Петрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,2</TD>
+<TD CLASS="R34C3">4,2</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>60. Струков Владислав Владимирович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,191</TD>
+<TD CLASS="R34C3">4,191</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>61. ЕВСЕНКО НИКИТА ИГОРЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,177</TD>
+<TD CLASS="R34C3">4,177</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>62. Щепелева Варвара Денисовна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,111</TD>
+<TD CLASS="R192C3">4,111</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>63. Разбоев Андрей Дмитриевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,095</TD>
+<TD CLASS="R192C3">4,095</TD>
+<TD CLASS="R192C3">1 ИЗ 4</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>64. Рожков Антон Вячеславович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,091</TD>
+<TD CLASS="R34C3">4,091</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>65. Тиханчук Владислав Алексеевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,091</TD>
+<TD CLASS="R192C3">4,091</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>66. Чернышева Ирина Алексеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,091</TD>
+<TD CLASS="R34C3">4,091</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>67. Буга Артем Анатольевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,087</TD>
+<TD CLASS="R192C3">4,087</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>68. КОТЛЯРОВ ПАВЕЛ ГЕННАДЬЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,063</TD>
+<TD CLASS="R34C3">4,063</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>69. Семикина Екатерина Игоревна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,059</TD>
+<TD CLASS="R34C3">4,059</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>70. Семикина Екатерина Игоревна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,059</TD>
+<TD CLASS="R34C3">4,059</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>71. Кудинова Дарья Александровна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,05</TD>
+<TD CLASS="R192C3">4,05</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>72. Митяев Артём Александрович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4,05</TD>
+<TD CLASS="R192C3">4,05</TD>
+<TD CLASS="R192C3">1 ИЗ 3</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>73. Марков Андрей Михайлович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4,046</TD>
+<TD CLASS="R34C3">4,046</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>74. Дрокина Анна Сергеевна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4</TD>
+<TD CLASS="R192C3">4</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>75. Кариков Артём Романович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>76. Кацибаия Ладо</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4</TD>
+<TD CLASS="R192C3">4</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>77. Никитина Анжелика Евгеньевна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">4</TD>
+<TD CLASS="R192C3">4</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>78. Щёлокова Валентина Максимовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">4</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>79. Ильинская Ксения Олеговна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,952</TD>
+<TD CLASS="R192C3">3,952</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>80. Карасев Егор Дмитриевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,944</TD>
+<TD CLASS="R34C3">3,944</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>81. Скурыбин Алексей Геннадьевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,941</TD>
+<TD CLASS="R192C3">3,941</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>82. СПИРИН АРТЕМ ГЕННАДЬЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,941</TD>
+<TD CLASS="R34C3">3,941</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>83. Чеботарев Дмитрий Александрович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,909</TD>
+<TD CLASS="R192C3">3,909</TD>
+<TD CLASS="R192C3">2 ИЗ 2</TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>84. Губина Анна Антоновна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,905</TD>
+<TD CLASS="R34C3">3,905</TD>
+<TD CLASS="R34C3">2 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>85. Шарыгин Сергей Константинович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,905</TD>
+<TD CLASS="R34C3">3,905</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>86. Алексеева Дарья Алексеевна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">2 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>87. Батищев Иван Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>88. Рукин Станислав Владимирович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,9</TD>
+<TD CLASS="R192C3">3,9</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>89. Тимошенко Кирилл Евгеньевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">3,9</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>90. Черненко Дарья Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,895</TD>
+<TD CLASS="R34C3">3,895</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>91. Фатахутдинова Аделина Максимовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,889</TD>
+<TD CLASS="R34C3">3,889</TD>
+<TD CLASS="R34C3">5 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>92. Амбарцумян Ваче Араевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,882</TD>
+<TD CLASS="R34C3">3,882</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>93. Сарафанов Никита Евгеньевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,882</TD>
+<TD CLASS="R34C3">3,882</TD>
+<TD CLASS="R34C3">1 ИЗ 4</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>94. Анциферов Павел Алексеевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,85</TD>
+<TD CLASS="R192C3">3,85</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>95. Пожаров Архип Дмитриевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,85</TD>
+<TD CLASS="R192C3">3,85</TD>
+<TD CLASS="R192C3">1 ИЗ 3</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>96. Ежов Тимофей Антонович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,833</TD>
+<TD CLASS="R192C3">3,833</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>97. Хазарян Артур Дикранович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,824</TD>
+<TD CLASS="R34C3">3,824</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>98. Степочкин Семён Дмитриевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,8</TD>
+<TD CLASS="R34C3">3,8</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>99. Востриков Максим Александрович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,778</TD>
+<TD CLASS="R192C3">3,778</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>100. Федотов Всеволод Павлович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,778</TD>
+<TD CLASS="R34C3">3,778</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>101. ЛЮКОВА МИЛЕНА ЕВГЕНЬЕВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,762</TD>
+<TD CLASS="R34C3">3,762</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>102. Боев Иван Алексеевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,75</TD>
+<TD CLASS="R192C3">3,75</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>103. Бурмакин Артём Павлович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,75</TD>
+<TD CLASS="R34C3">3,75</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>104. Пулодов Тимур Миралиевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,75</TD>
+<TD CLASS="R34C3">3,75</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>105. СИДОРИН ДАНИИЛ СТАНИСЛАВОВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,75</TD>
+<TD CLASS="R34C3">3,75</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>106. Урывский Кирилл Викторович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,75</TD>
+<TD CLASS="R34C3">3,75</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>107. Казаков Вадим Евгеньевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,737</TD>
+<TD CLASS="R192C3">3,737</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>108. Селищев Александр Анатольевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,737</TD>
+<TD CLASS="R192C3">3,737</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>109. Татаринцев Данил Владиславович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,737</TD>
+<TD CLASS="R192C3">3,737</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>110. Гранкин Артём Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,727</TD>
+<TD CLASS="R34C3">3,727</TD>
+<TD CLASS="R34C3">5 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>111. Шестаков Артём Владимирович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,682</TD>
+<TD CLASS="R192C3">3,682</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>112. Жук Степан Евгеньевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,667</TD>
+<TD CLASS="R34C3">3,667</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>113. Лосунов Кирилл Александрович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,667</TD>
+<TD CLASS="R192C3">3,667</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>114. Сизенов Ярослав Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,65</TD>
+<TD CLASS="R34C3">3,65</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>115. Грешников Кирилл Витальевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,647</TD>
+<TD CLASS="R34C3">3,647</TD>
+<TD CLASS="R34C3">3 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>116. ИВАНОВ ДМИТРИЙ ЕВГЕНЬЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,636</TD>
+<TD CLASS="R34C3">3,636</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>117. СЫЧУГОВ ДМИТРИЙ СЕРГЕЕВИЧ</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,611</TD>
+<TD CLASS="R192C3">3,611</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>118. Замятин Владислав Денисович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,6</TD>
+<TD CLASS="R192C3">3,6</TD>
+<TD CLASS="R192C3">1 ИЗ 4</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>119. Флигинских Владислав Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,6</TD>
+<TD CLASS="R34C3">3,6</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>120. Дуванов Матвей Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,591</TD>
+<TD CLASS="R34C3">3,591</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>121. Кривоклякин Денис Александрович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,588</TD>
+<TD CLASS="R192C3">3,588</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>122. Петренко Захар Игоревич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,588</TD>
+<TD CLASS="R192C3">3,588</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>123. ФЕДОРЕЕВА ЕЛЕНА АЛЕКСАНДРОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,579</TD>
+<TD CLASS="R34C3">3,579</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R93>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R93C1" COLSPAN=2>124. Литвиненко Виктор Сергеевич</TD>
+<TD CLASS="R93C3" COLSPAN=2>Дети-инвалиды, инвалиды I и II групп, которым согласно заключению федерального учреждения медико-социальной экспертизы не противопоказано обучение</TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD CLASS="R93C3">3,563</TD>
+<TD CLASS="R93C3">3,563</TD>
+<TD CLASS="R93C3">2 ИЗ 2</TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD CLASS="R93C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>125. Чесноков Ярослав Романович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,556</TD>
+<TD CLASS="R34C3">3,556</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>126. Сапрыкин Иван Сергеевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,529</TD>
+<TD CLASS="R192C3">3,529</TD>
+<TD CLASS="R192C3">1 ИЗ 3</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>127. Асеев Максим Анатольевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,5</TD>
+<TD CLASS="R192C3">3,5</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>128. Толоконников Никита Сергеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,476</TD>
+<TD CLASS="R34C3">3,476</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>129. Мухаббатов Умарджон Фахториддинович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,455</TD>
+<TD CLASS="R192C3">3,455</TD>
+<TD CLASS="R192C3">1 ИЗ 5</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>130. Торжинский Кирилл Николаевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,45</TD>
+<TD CLASS="R34C3">3,45</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>131. Сорокин Даниил Сергеевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,438</TD>
+<TD CLASS="R192C3">3,438</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>132. Борщев Кирилл Вадимович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,429</TD>
+<TD CLASS="R34C3">3,429</TD>
+<TD CLASS="R34C3">1 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>133. Котогулов Игорь Сергеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,421</TD>
+<TD CLASS="R34C3">3,421</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>134. Ноздрин Никита Олегович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,412</TD>
+<TD CLASS="R192C3">3,412</TD>
+<TD CLASS="R192C3">1 ИЗ 2</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>135. Удовитченко Маргарита Рошадовна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,412</TD>
+<TD CLASS="R34C3">3,412</TD>
+<TD CLASS="R34C3">2 ИЗ 2</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>136. Голиков Ярослав Игоревич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,409</TD>
+<TD CLASS="R192C3">3,409</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>137. Кудрявцев Никита Алексеевич</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,409</TD>
+<TD CLASS="R34C3">3,409</TD>
+<TD CLASS="R34C3">1 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>138. Ступников Дмитрий Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,409</TD>
+<TD CLASS="R34C3">3,409</TD>
+<TD CLASS="R34C3">3 ИЗ 3</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>139. Елтышев Егор Алексеевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,4</TD>
+<TD CLASS="R192C3">3,4</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>140. Серганов Павел Константинович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,4</TD>
+<TD CLASS="R34C3">3,4</TD>
+<TD CLASS="R34C3">4 ИЗ 4</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>141. ФИЛОНОВ ИЛЬЯ ОЛЕГОВИЧ</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,4</TD>
+<TD CLASS="R192C3">3,4</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>142. Боева Ульяна Александровна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,389</TD>
+<TD CLASS="R34C3">3,389</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>143. Волнянкин Ярослав Сергеевич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,278</TD>
+<TD CLASS="R192C3">3,278</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>144. Аленичев Сергей Александрович</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,263</TD>
+<TD CLASS="R34C3">3,263</TD>
+<TD CLASS="R34C3">2 ИЗ 5</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>145. Новиков Ярослав Владимирович</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,227</TD>
+<TD CLASS="R192C3">3,227</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>146. Игнатов Антон Игоревич</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,211</TD>
+<TD CLASS="R192C3">3,211</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>147. СИНОТОВ СЕМЁН АНДРЕЕВИЧ</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">3,211</TD>
+<TD CLASS="R34C3">3,211</TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R8>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R192C1" COLSPAN=2>148. Кошевая Кира Андреевна</TD>
+<TD CLASS="R192C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R192C3"><SPAN></SPAN></TD>
+<TD CLASS="R192C3">3,071</TD>
+<TD CLASS="R192C3">3,071</TD>
+<TD CLASS="R192C3">1 ИЗ 1</TD>
+<TD CLASS="R192C3">Да</TD>
+<TD CLASS="R192C3">Рекомендован<BR>к зачислению</TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>149. РЯБОВА ВАЛЕРИЯ ОЛЕГОВНА</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R34C1" COLSPAN=2>150. Смирнова София Михайловна</TD>
+<TD CLASS="R34C3" COLSPAN=2><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD CLASS="R34C3">1 ИЗ 1</TD>
+<TD CLASS="R34C3">Да</TD>
+<TD CLASS="R34C3"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+<TR CLASS=R330>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R330C1"><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR CLASS=R11>
+<TD><SPAN></SPAN></TD>
+<TD CLASS="R331C1" COLSPAN=10><SPAN STYLE="white-space:nowrap;max-width:0px;">Обновлено&nbsp;12.08.2025&nbsp;15:36:32&nbsp;</SPAN></TD>
+<TD><SPAN></SPAN></TD>
+<TD></TD>
+</TR>
+</TABLE>
+</div></div></div></BODY>
+</HTML>

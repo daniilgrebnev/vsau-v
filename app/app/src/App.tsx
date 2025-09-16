@@ -8,6 +8,7 @@ import { Faculties } from './pages/Faculties/Faculties'
 import { Main } from './pages/Main/Main'
 import { Page } from './pages/Page/Page'
 import { Programs } from './pages/Programs/Programs'
+import { Rating } from './pages/Ratings/Rating'
 import { Reception } from './pages/Reception/Reception'
 import { Single } from './pages/Single/Single'
 
@@ -21,6 +22,7 @@ function App() {
 					<Route path={`/reception`} element={<Reception />} />
 					<Route path={`/documents`} element={<Documents />} />
 					<Route path={`/contacts`} element={<Contacts />} />
+					<Route path={`/rating`} element={<Rating />} />
 					<Route path={`/programs`} element={<Programs />} />
 					<Route path={`/post/:id`} element={<Single />} />
 					<Route path={`/page/:id`} element={<Page />} />

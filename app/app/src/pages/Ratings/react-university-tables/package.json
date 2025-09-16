@@ -1,0 +1,33 @@
+{
+  "name": "react-university-tables",
+  "version": "1.0.0",
+  "description": "React компонент для отображения списков поступающих университета с поиском",
+  "main": "src/index.js",
+  "files": [
+    "src/"
+  ],
+  "keywords": [
+    "react",
+    "university",
+    "tables",
+    "search",
+    "students",
+    "admission"
+  ],
+  "author": "VGAU",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "build": "echo 'No build process needed - use src files directly'",
+    "test": "echo 'No tests specified'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "local"
+  }
+}
