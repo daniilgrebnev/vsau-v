@@ -73,6 +73,12 @@ export const getProgramsTable = async () => {
 		})
 }
 
+// export const getTable = async (table: string) => {
+// 	return api.get(`/table/html1`, { params }).then(res => {
+// 		return res.data.html as string
+// 	})
+// }
+
 export interface IMenuItem {
 	id: string
 	name: string

@@ -30,7 +30,6 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 	onTableClick,
 	className = '',
 }) => {
-	const [searchQuery, setSearchQuery] = useState<string>('')
 	const [selectedLevel, setSelectedLevel] = useState<string>('')
 	const [selectedQualification, setSelectedQualification] = useState<string>('')
 	const [selectedFaculty, setSelectedFaculty] = useState<string>('')
@@ -77,7 +76,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		},
 		{
 			name: 'Землеустройство, кадастр и мониторинг земель',
-			faculty: 'Факультет агрономии, агрохимии и экологии',
+			faculty: 'Факультет землеустройства и кадастров',
 			file: 'ff5.html',
 			educationLevel: 'Аспирантура',
 			code: '1.6.15.',
@@ -176,7 +175,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		},
 		{
 			name: 'Технологии, машины и оборудование для агропромышленного комплекса',
-			faculty: 'Инженерный факультет',
+			faculty: 'Агроинженерный факультет',
 			file: 'ff16.html',
 			educationLevel: 'Аспирантура',
 			code: '4.3.1.',
@@ -196,7 +195,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		// БАКАЛАВРИАТ
 		{
 			name: 'Агроинженерия',
-			faculty: 'Инженерный факультет',
+			faculty: 'Агроинженерный факультет',
 			file: 'ff18.html',
 			educationLevel: 'Бакалавр',
 			code: '35.03.06',
@@ -260,7 +259,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		},
 		{
 			name: 'Землеустройство и кадастры',
-			faculty: 'Факультет агрономии, агрохимии и экологии',
+			faculty: 'Факультет землеустройства и кадастров',
 			file: 'ff24.html',
 			educationLevel: 'Бакалавр',
 			code: '21.03.02',
@@ -282,7 +281,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		},
 		{
 			name: 'Ландшафтная архитектура',
-			faculty: 'Факультет агрономии, агрохимии и экологии',
+			faculty: 'Факультет землеустройства и кадастров',
 			file: 'ff26.html',
 			educationLevel: 'Бакалавр',
 			code: '35.03.10',
@@ -302,7 +301,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		},
 		{
 			name: 'Прикладная информатика',
-			faculty: 'Инженерный факультет',
+			faculty: 'Экономический факультет',
 			file: 'ff28.html',
 			educationLevel: 'Бакалавр',
 			code: '09.03.03',
@@ -313,7 +312,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		},
 		{
 			name: 'Природообустройство и водопользование',
-			faculty: 'Факультет агрономии, агрохимии и экологии',
+			faculty: 'Факультет землеустройства и кадастров',
 			file: 'ff29.html',
 			educationLevel: 'Бакалавр',
 			code: '20.03.02',
@@ -393,7 +392,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		},
 		{
 			name: 'Эксплуатация транспортно-технологических машин и комплексов',
-			faculty: 'Инженерный факультет',
+			faculty: 'Агроинженерный факультет',
 			file: 'ff37.html',
 			educationLevel: 'Бакалавр',
 			code: '23.03.03',
@@ -417,7 +416,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		// МАГИСТРАТУРА
 		{
 			name: 'Агроинженерия',
-			faculty: 'Инженерный факультет',
+			faculty: 'Агроинженерный факультет',
 			file: 'ff39.html',
 			educationLevel: 'Магистр',
 			code: '35.04.06',
@@ -428,7 +427,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		},
 		{
 			name: 'Агрономия',
-			faculty: 'Факультет агрономии, агрохимии и экологии',
+			faculty: 'Передовая инженерная школа «Агроген»',
 			file: 'ff40.html',
 			educationLevel: 'Магистр',
 			code: '35.04.04',
@@ -472,7 +471,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		},
 		{
 			name: 'Землеустройство и кадастры',
-			faculty: 'Факультет агрономии, агрохимии и экологии',
+			faculty: 'Факультет землеустройства и кадастров',
 			file: 'ff44.html',
 			educationLevel: 'Магистр',
 			code: '21.04.02',
@@ -795,28 +794,18 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 			filtered = filtered.filter(table => table.name === selectedDirection)
 		}
 
-		// Фильтр по поисковому запросу
-		if (searchQuery.trim()) {
-			const query = searchQuery.toLowerCase()
-			filtered = filtered.filter(
-				table =>
-					table.name.toLowerCase().includes(query) ||
-					table.faculty.toLowerCase().includes(query) ||
-					(table.educationLevel &&
-						table.educationLevel.toLowerCase().includes(query)) ||
-					(table.code && table.code.toLowerCase().includes(query))
-			)
-		}
-
 		return filtered
 	}, [
-		searchQuery,
 		selectedLevel,
 		selectedQualification,
 		selectedFaculty,
 		selectedDirection,
 		allTables,
 	])
+
+	// Проверяем, выбраны ли все необходимые фильтры
+	const areAllFiltersSelected =
+		selectedQualification && selectedFaculty && selectedDirection
 
 	// Обработчики изменения фильтров
 	const handleQualificationChange = (value: string) => {
@@ -868,32 +857,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 				<p>{subtitle}</p>
 			</div>
 
-			{/* Поиск и фильтры */}
-			<div className='university-tables-controls'>
-				<div className='university-tables-search'>
-					<input
-						type='text'
-						value={searchQuery}
-						onChange={e => setSearchQuery(e.target.value)}
-						placeholder='Поиск по направлениям, факультетам, уровню или коду...'
-						className='university-tables-search-input'
-					/>
-				</div>
-				<div className='university-tables-filter'>
-					<select
-						value={selectedLevel}
-						onChange={e => setSelectedLevel(e.target.value)}
-						className='university-tables-level-select'
-					>
-						<option value=''>Все уровни образования</option>
-						{educationLevels.map(level => (
-							<option key={level} value={level}>
-								{level}
-							</option>
-						))}
-					</select>
-				</div>
-			</div>
+			{/* Фильтры */}
 
 			{/* Дополнительные фильтры */}
 			<div className='university-tables-advanced-filters'>
@@ -947,24 +911,16 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 					</select>
 				</div>
 			</div>
-			<div className='university-tables-search-results'>
-				{searchQuery ||
-				selectedLevel ||
-				selectedQualification ||
-				selectedFaculty ||
-				selectedDirection
-					? filteredTables.length === 0
-						? `По заданным критериям ничего не найдено`
-						: `Найдено: ${filteredTables.length} направлений`
-					: `Показано: ${allTables.length} направлений`}
-			</div>
+			{/* Информация о фильтрах */}
 
-			{/* Сетка карточек */}
-			<div className='university-tables-grid'>
-				{filteredTables.map((table, index) => (
-					<TableCard key={`${table.file}-${index}`} table={table} />
-				))}
-			</div>
+			{/* Сетка карточек - показываем только если выбраны все фильтры */}
+			{areAllFiltersSelected && (
+				<div className='university-tables-grid'>
+					{filteredTables.map((table, index) => (
+						<TableCard key={`${table.file}-${index}`} table={table} />
+					))}
+				</div>
+			)}
 		</div>
 	)
 }
