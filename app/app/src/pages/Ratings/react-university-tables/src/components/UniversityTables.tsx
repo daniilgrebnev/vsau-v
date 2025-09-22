@@ -30,7 +30,6 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 	onTableClick,
 	className = '',
 }) => {
-	const [selectedLevel, setSelectedLevel] = useState<string>('')
 	const [selectedQualification, setSelectedQualification] = useState<string>('')
 	const [selectedFaculty, setSelectedFaculty] = useState<string>('')
 	const [selectedDirection, setSelectedDirection] = useState<string>('')
@@ -713,12 +712,6 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 	const allTables = customTables || defaultTables
 
 	// Получаем уникальные уровни образования
-	const educationLevels = useMemo(() => {
-		const levels = allTables
-			.map(table => table.educationLevel)
-			.filter((level, index, arr) => level && arr.indexOf(level) === index)
-		return levels
-	}, [allTables])
 
 	// Получаем уникальные степени квалификации
 	const qualifications = useMemo(() => {
@@ -771,11 +764,6 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		let filtered = allTables
 
 		// Фильтр по уровню образования
-		if (selectedLevel) {
-			filtered = filtered.filter(
-				table => table.educationLevel === selectedLevel
-			)
-		}
 
 		// Фильтр по степени квалификации
 		if (selectedQualification) {
@@ -795,13 +783,7 @@ const UniversityTables: FC<UniversityTablesProps> = ({
 		}
 
 		return filtered
-	}, [
-		selectedLevel,
-		selectedQualification,
-		selectedFaculty,
-		selectedDirection,
-		allTables,
-	])
+	}, [selectedQualification, selectedFaculty, selectedDirection, allTables])
 
 	// Проверяем, выбраны ли все необходимые фильтры
 	const areAllFiltersSelected =
