@@ -8,7 +8,12 @@ import SPO from '../../../../images/SPO.png'
 import TF from '../../../../images/TF.png'
 import VET from '../../../../images/VET.png'
 
+// СПО, АА (сейчас нет баннера), АИ, ВЖ, ТТ, ЗК, ГП, ЭФ, Аспирантура
+
 export const sliderArr = [
+	{
+		img: SPO,
+	},
 	{
 		img: FAA,
 	},
@@ -16,20 +21,17 @@ export const sliderArr = [
 		img: AI,
 	},
 	{
-		img: TF,
-	},
-	{
 		img: VET,
 	},
 	{
-		img: FZK,
+		img: TF,
 	},
 
 	{
-		img: GPF,
+		img: FZK,
 	},
 	{
-		img: SPO,
+		img: GPF,
 	},
 	{
 		img: EF,

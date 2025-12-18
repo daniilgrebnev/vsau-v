@@ -48,8 +48,13 @@ const CommItem = () => {
 			</div>
 			<div className='h-full flex flex-col gap-2 justify-start items-start '>
 				<b className='mb-10'>Пн - Пт, с 8:30 до 16:30</b>
-				<p>График работы по субботам следует уточнять по телефону:</p>
-				<p>+7 (473) 253-78-74</p>
+				<p>График работы по выходным следует уточнять по телефонам:</p>
+				<a className='hover:underline' href='tel:+7-(473)-253-78-74'>
+					+7-(473)-253-78-74
+				</a>
+				<a className='hover:underline' href='tel:+7-(473)-253-78-67'>
+					+7-(473)-253-78-67
+				</a>
 			</div>
 		</div>
 	)

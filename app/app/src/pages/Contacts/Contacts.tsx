@@ -14,6 +14,17 @@ export const Contacts = () => {
 					<a className='hover:underline' href='tel:+7-(473)-253-78-67'>
 						+7-(473)-253-78-67
 					</a>
+					<br /> Email:{' '}
+					<a className='hover:underline' href='mailto:entrance@vsau.ru'>
+						entrance@vsau.ru
+					</a>
+					<br /> Адрес:{' '}
+					<a
+						className='hover:underline'
+						href='https://yandex.ru/maps/-/CHRKeI~l'
+					>
+						г. Воронеж, ул. Мичурина, 1, ауд. 177 и 178
+					</a>
 				</h3>
 				<div className='flex items-start justify-start gap-10 max-md:flex-col max-md:text-center max-md:items-center'>
 					<div className='w-1/2 max-md:w-full'>
@@ -22,14 +33,15 @@ export const Contacts = () => {
 								Демидов Павел Валерьевич
 							</span>{' '}
 							<br />
-							ответственный секретарь приемной комиссии
+							ответственный секретарь приемной комиссии – по всем вопросам, в
+							том числе для консультаций поступающих из приграничных районов,
+							ДНР, ЛНР, Запорожской и Херсонской области, участников специальной
+							военной операции и их детей
 						</div>
 						<div className=''>
-							Телефон: (473) 253 78 67, +7-960-129-74-24 (WhatsApp, Telegram), в
-							том числе для консультирования поступающих из Белгородской области
-							и участников специальной военной операции на территориях Украины,
-							Донецкой Народной Республики, Луганской Народной Республики,
-							Запорожской области и Херсонской области и их детей <br /> E-mail:{' '}
+							Телефон: (473) 253 78 67,{' '}
+							<a href='tel:+7-960-129-74-24'>+7-960-129-74-24</a> (WhatsApp,
+							Telegram) <br /> E-mail:{' '}
 							<a
 								className={
 									'hover:underline hover:text-[#1495d9] text-[#1494d9bc]'
@@ -59,9 +71,9 @@ export const Contacts = () => {
 							Телефон:{' '}
 							<a
 								className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]'
-								href='tel:+7-(473)-253-78-74'
+								href='tel:+7-(473)-253-78-67'
 							>
-								+7 (473) 253 78 74
+								+7-(473)-253-78-67
 							</a>{' '}
 							<br /> E-mail:{' '}
 							<a
@@ -73,9 +85,11 @@ export const Contacts = () => {
 						</div>
 						<div className=''>
 							<span className=' font-semibold text-[#000000]'>
+								Алынина Дарья Николаевна <br /> Новикова Валентина Анатольевна{' '}
+								<br />
 								Чевычалов Кирилл Юрьевич
 							</span>
-							<br /> специалист центра по работе с абитуриентами
+							<br /> специалисты центра по работе с абитуриентами
 						</div>
 						<div className=''>
 							Телефон:{' '}

@@ -8,7 +8,7 @@ export interface IFacultiesListProps {
 
 export const faculties1List: IFacultiesListProps[] = [
 	{
-		name: 'Центр довузовской подготовки',
+		name: 'Центр по работе с абитуриентами ',
 		teachers: 'Демидов Павел Валерьевич',
 		place: 'Руководитель центра',
 		link: 'vk.com/club186466720',
@@ -19,7 +19,7 @@ export const faculties1List: IFacultiesListProps[] = [
 		],
 	},
 	{
-		name: 'Центр довузовской подготовки',
+		name: 'Центр по работе с абитуриентами',
 		teachers: 'Демидов Павел Валерьевич',
 		place: 'Руководитель центра',
 		link: 'vk.com/club186466720',
@@ -30,7 +30,7 @@ export const faculties1List: IFacultiesListProps[] = [
 		],
 	},
 	{
-		name: 'Центр довузовской подготовки',
+		name: 'Центр по работе с абитуриентами',
 		teachers: 'Демидов Павел Валерьевич',
 		place: 'Руководитель центра',
 		link: 'vk.com/club186466720',
@@ -52,7 +52,7 @@ export const faculties1List: IFacultiesListProps[] = [
 		],
 	},
 	{
-		name: 'Центр довузовской подготовки',
+		name: 'Центр по работе с абитуриентами',
 		teachers: 'Демидов Павел Валерьевич',
 		place: 'Руководитель центра',
 		link: 'vk.com/club186466720',
