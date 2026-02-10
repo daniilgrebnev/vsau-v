@@ -7,11 +7,11 @@ export const Contacts = () => {
 			<div className='p-8 bg-white '>
 				<h3 className='text-xl mb-10 font-normal text-[#0F91D6]'>
 					Телефоны приёмной комиссии: <br />
-					<a className='hover:underline' href='tel:+7-(473)-253-78-74'>
+					<a className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]' href='tel:+7-(473)-253-78-74'>
 						+7-(473)-253-78-74
 					</a>
 					,<br />
-					<a className='hover:underline' href='tel:+7-(473)-253-78-67'>
+					<a className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]' href='tel:+7-(473)-253-78-67'>
 						+7-(473)-253-78-67
 					</a>
 					<br /> Email:{' '}
@@ -39,8 +39,12 @@ export const Contacts = () => {
 							военной операции и их детей
 						</div>
 						<div className=''>
-							Телефон: (473) 253 78 67,{' '}
-							<a href='tel:+7-960-129-74-24'>+7-960-129-74-24</a> (WhatsApp,
+							Телефон:{' '}
+							<a className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]' href='tel:+7-(473)-253-78-67'>
+								+7-(473)-253-78-67
+							</a>
+							,{' '}
+							<a className='hover:underline hover:text-[#1495d9] text-[#1494d9bc]' href='tel:+7-960-129-74-24'>+7-960-129-74-24</a> (WhatsApp,
 							Telegram) <br /> E-mail:{' '}
 							<a
 								className={
