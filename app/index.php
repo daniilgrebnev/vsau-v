@@ -2,12 +2,12 @@
 <html lang="ru">
 
 <head>
-	<meta charset="<?php bloginfo('charset'); ?>">
-	<link rel="icon" type="image/svg+xml" href="./vite.svg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Vite + React + TS</title>
-	<script type="module" crossorigin src="<?php echo get_template_directory_uri(); ?>/app/index.js"></script>
-	<link rel="stylesheet" crossorigin href="<?php echo get_template_directory_uri(); ?>/app/style.css">
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="https://www.vsau.ru/wp-content/themes/vsau-v2-theme/assets/icons/svg/logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Абитуриентам</title>
+		<script type="module" crossorigin src="./index.js"></script>
+		<link rel="stylesheet" crossorigin href="./style.css">
 
 	<?php wp_head(); ?>
 </head>
