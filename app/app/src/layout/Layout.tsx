@@ -24,6 +24,31 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
 		if (screen < 768) {
 			setOpenSidebar(false)
 		}
+		const handleLinkClick = (e: MouseEvent) => {
+			const target = e.target as HTMLElement
+			const link = target.closest('a')
+
+			if (!link) return
+
+			const href = link.getAttribute('href')
+
+			// Проверяем, ведет ли ссылка на внешний сайт
+			if (
+				href &&
+				(href.startsWith('http') || href.startsWith('//')) &&
+				!href.includes(window.location.hostname)
+			) {
+				e.preventDefault()
+				window.open(href, '_blank')
+			}
+			// Если ссылка внутренняя - ничего не делаем, пусть работает как обычно
+		}
+
+		document.addEventListener('click', handleLinkClick)
+
+		return () => {
+			document.removeEventListener('click', handleLinkClick)
+		}
 	}, [])
 
 	return (

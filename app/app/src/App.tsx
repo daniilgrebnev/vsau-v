@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Layout } from './layout/Layout'
 
@@ -14,7 +14,7 @@ import { Single } from './pages/Single/Single'
 
 function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Layout>
 				<Routes>
 					<Route index element={<Main />} />
@@ -28,7 +28,7 @@ function App() {
 					<Route path={`/page/:id`} element={<Page />} />
 				</Routes>
 			</Layout>
-		</BrowserRouter>
+		</HashRouter>
 	)
 }
 
