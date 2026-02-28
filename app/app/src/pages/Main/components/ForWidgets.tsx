@@ -7,19 +7,19 @@ export const ForWidgets = () => {
 	const widgetImgs = [
 		{
 			img: eleven,
-			href: 'https://abit.vsau.ru/wp-content/uploads/2025/01/%D0%91%D1%83%D0%BA%D0%BB%D0%B5%D1%82_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%B0%D1%82-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%82%D0%B5%D1%82_%D0%92%D0%93%D0%90%D0%A3_2025.pdf',
+			href: 'http://www.vsau.ru/wp-content/uploads/2026/02/Буклет_бакалавриат-специалитет_ВГАУ_2026_ДОД.pdf',
 		},
 		{
 			img: nine,
-			href: 'https://abit.vsau.ru/wp-content/uploads/2025/01/%D0%91%D1%83%D0%BA%D0%BB%D0%B5%D1%82_%D0%A1%D0%9F%D0%9E_2025_%D0%904.pdf',
+			href: 'http://www.vsau.ru/wp-content/uploads/2026/02/Буклет_СПО_2026_А4.pdf',
 		},
 		{
 			img: spo,
-			href: 'https://abit.vsau.ru/wp-content/uploads/2025/01/%D0%91%D1%83%D0%BA%D0%BB%D0%B5%D1%82_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%B0%D1%82-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%82%D0%B5%D1%82_%D0%B4%D0%BB%D1%8F-%D0%A1%D0%9F%D0%9E_%D0%92%D0%93%D0%90%D0%A3_2025-1.pdf',
+			href: 'http://www.vsau.ru/wp-content/uploads/2026/02/Буклет_бакалавриат-специалитет_для-СПО_ВГАУ_2026.pdf',
 		},
 		{
 			img: mag,
-			href: 'https://abit.vsau.ru/wp-content/uploads/2025/01/%D0%91%D1%83%D0%BA%D0%BB%D0%B5%D1%82_%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0_%D0%92%D0%93%D0%90%D0%A3_2025.pdf',
+			href: 'http://www.vsau.ru/wp-content/uploads/2026/02/Буклет_магистратура_ВГАУ_2026.pdf',
 		},
 	]
 	return (
