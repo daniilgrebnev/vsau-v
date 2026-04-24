@@ -94,7 +94,7 @@ const MailItem = () => {
 					<CopyIcon height={15} fill={copied ? '#37AEED' : '#fff'} />
 				</div>
 				<p className='link' onClick={handleCopy}>
-					{copied ? 'Скопировано!' : 'Скопировать адрес эл. почты'}
+					{copied ? 'Скопировано!' : 'Скопировать почтовый адрес'}
 				</p>
 			</div>
 			<div className='h-full flex flex-col gap-1 justify-start items-start '>
