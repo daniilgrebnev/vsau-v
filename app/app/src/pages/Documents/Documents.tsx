@@ -83,7 +83,7 @@ const MailItem = () => {
 					Отправьте заявление и документы на адрес:
 				</h4>
 				<p className={styles.subDescr}>entrance@36.vsau.ru</p>
-				<p className={styles.subDescr}>
+				<p style={{ fontSize: '12px' }} className={styles.subDescr}>
 					394087, г. Воронеж, ул. Мичурина, д. 1, Приемная комиссия, аудитория №
 					177
 				</p>
