@@ -80,7 +80,7 @@ const MailItem = () => {
 			<h3 className={styles.title}>Через оператора почтовой связи </h3>
 			<div className={styles.description}>
 				<h4 className={styles.subTitle}>
-					Отправьте заявление и документы на адрес:
+					Отправьте заявление и документы на почтовый адрес:
 				</h4>
 				{/* <p className={styles.subDescr}>entrance@36.vsau.ru</p> */}
 				<p className={styles.subDescr}>
