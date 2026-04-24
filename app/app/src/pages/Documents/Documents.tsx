@@ -77,12 +77,16 @@ const MailItem = () => {
 			<div className={styles.img}>
 				<MailIcon fill='white' width={'50%'} />
 			</div>
-			<h3 className={styles.title}>На электронную почту</h3>
+			<h3 className={styles.title}>Через оператора почтовой связи </h3>
 			<div className={styles.description}>
 				<h4 className={styles.subTitle}>
 					Отправьте заявление и документы на адрес:
 				</h4>
 				<p className={styles.subDescr}>entrance@36.vsau.ru</p>
+				<p className={styles.subDescr}>
+					394087, г. Воронеж, ул. Мичурина, д. 1, Приемная комиссия, аудитория №
+					177
+				</p>
 			</div>
 
 			<div className={styles.button + ' ' + (copied ? styles.copied : '')}>
