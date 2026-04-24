@@ -63,7 +63,9 @@ const CommItem = () => {
 const MailItem = () => {
 	const [copied, setCopied] = useState(false)
 	const handleCopy = () => {
-		navigator.clipboard.writeText('entrance@36.vsau.ru')
+		navigator.clipboard.writeText(
+			'394087, г. Воронеж, ул. Мичурина, д. 1, Приемная комиссия, аудитория №177',
+		)
 		setCopied(true)
 		setTimeout(() => setCopied(false), 1000)
 	}
