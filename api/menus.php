@@ -61,3 +61,40 @@ function register_page_html_endpoint()
 	));
 }
 add_action('rest_api_init', 'register_page_html_endpoint');
+
+add_action('rest_api_init', function () {
+	register_rest_route('abit/v1', '/page/(?P<id>\d+)/html', [
+		'methods' => WP_REST_Server::EDITABLE,
+		'callback' => 'abit_update_page_html',
+		'permission_callback' => '__return_true',
+	]);
+});
+
+function abit_update_page_html($request)
+{
+	$page_id = (int) $request['id'];
+	$params = $request->get_json_params();
+	$page = get_post($page_id);
+
+	if (!$page || $page->post_type !== 'page') {
+		return new WP_Error('page_not_found', 'Page not found', ['status' => 404]);
+	}
+
+	if (!isset($params['content'])) {
+		return new WP_Error('invalid_request', 'Content is required', ['status' => 400]);
+	}
+
+	$result = wp_update_post([
+		'ID' => $page_id,
+		'post_content' => wp_kses_post($params['content']),
+	], true);
+
+	if (is_wp_error($result)) {
+		return $result;
+	}
+
+	return [
+		'id' => $page_id,
+		'message' => 'Page updated successfully',
+	];
+}

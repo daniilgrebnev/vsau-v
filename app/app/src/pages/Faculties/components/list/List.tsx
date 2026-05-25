@@ -13,6 +13,15 @@ interface IFaculty {
 	order: number
 }
 
+const formatPhone = (phone: string) =>
+	phone?.replace(/\s*\(WhatsApp,?\s*Telegram\)/gi, '').trim() ?? ''
+
+const formatVkHref = (link: string) => {
+	if (!link) return ''
+	if (/^https?:\/\//i.test(link)) return link
+	return `https://${link.replace(/^\/+/, '')}`
+}
+
 export const List = () => {
 	const [faculties, setFaculties] = useState<IFaculty[]>([])
 
@@ -38,22 +47,23 @@ export const List = () => {
 						{item.teacher}
 					</div>
 					<div className='max-md:text-xs'>{item.teacher_position}</div>
-					<a
-						href={`https://${item.vk_link}`}
-						className='block text-[#1495D9] cursor-pointer hover:underline max-md:text-xs'
-					>
-						{item.vk_link}
-					</a>
+					{item.vk_link && (
+						<a
+							href={formatVkHref(item.vk_link)}
+							className='block text-[#1495D9] cursor-pointer hover:underline max-md:text-xs'
+						>
+							{item.vk_link.replace(/^https?:\/\//i, '')}
+						</a>
+					)}
 					<div className='max-md:text-xs'>
-						<div className='' key={index}>
-							{item.tel1}
-						</div>
-						<div className='' key={index}>
-							{item.tel2}
-						</div>
-						<div className='' key={index}>
-							{item.tel3}
-						</div>
+						{[item.tel1, item.tel2, item.tel3]
+							.map(formatPhone)
+							.filter(Boolean)
+							.map((tel, telIndex) => (
+								<div className='' key={telIndex}>
+									{tel}
+								</div>
+							))}
 					</div>
 				</div>
 			))}

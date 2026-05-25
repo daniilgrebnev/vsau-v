@@ -57,7 +57,7 @@ export const MainWidgets = () => {
 				</p>
 			</Link>
 			<Link
-				to={`/rating`}
+				to={`/enrollment`}
 				style={{ gridTemplateColumns: '20% 80%' }}
 				className='grid  max-md:w-full gap-[10px] bg-white py-4 px-2 rounded-[15px] w-[32%] hover:opacity-80 active:opacity-50 transition-all'
 			>

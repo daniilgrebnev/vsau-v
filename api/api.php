@@ -38,6 +38,43 @@ function register_all_news_api_route()
 
 add_action('rest_api_init', 'register_all_news_api_route');
 
+add_action('rest_api_init', function () {
+	register_rest_route('abit/v1', '/news/(?P<id>\d+)', [
+		'methods' => WP_REST_Server::EDITABLE,
+		'callback' => 'abit_update_news',
+		'permission_callback' => '__return_true',
+	]);
+});
+
+function abit_update_news($request)
+{
+	$post_id = (int) $request['id'];
+	$params = $request->get_json_params();
+	$post = get_post($post_id);
+
+	if (!$post || $post->post_type !== 'post') {
+		return new WP_Error('not_found', 'Post not found', ['status' => 404]);
+	}
+
+	if (!isset($params['content'])) {
+		return new WP_Error('invalid_request', 'Content is required', ['status' => 400]);
+	}
+
+	$result = wp_update_post([
+		'ID' => $post_id,
+		'post_content' => wp_kses_post($params['content']),
+	], true);
+
+	if (is_wp_error($result)) {
+		return $result;
+	}
+
+	return [
+		'id' => $post_id,
+		'message' => 'Post updated successfully',
+	];
+}
+
 // Функция для получения записи по ID
 function get_news_by_id($data)
 {

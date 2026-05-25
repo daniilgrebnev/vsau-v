@@ -4,6 +4,7 @@ import { Layout } from './layout/Layout'
 
 import { Contacts } from './pages/Contacts/Contacts'
 import { Documents } from './pages/Documents/Documents'
+import { Enrollment } from './pages/Enrollment/Enrollment'
 import { Faculties } from './pages/Faculties/Faculties'
 import { Main } from './pages/Main/Main'
 import { Page } from './pages/Page/Page'
@@ -23,6 +24,7 @@ function App() {
 					<Route path={`/documents`} element={<Documents />} />
 					<Route path={`/contacts`} element={<Contacts />} />
 					<Route path={`/rating`} element={<Rating />} />
+					<Route path={`/enrollment`} element={<Enrollment />} />
 					<Route path={`/programs`} element={<Programs />} />
 					<Route path={`/post/:id`} element={<Single />} />
 					<Route path={`/page/:id`} element={<Page />} />

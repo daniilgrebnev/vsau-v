@@ -37,6 +37,50 @@ add_action('rest_api_init', function () {
 	]);
 });
 
+function abit_sanitize_faculty_phone($phone)
+{
+	if (!$phone) {
+		return '';
+	}
+	return trim(preg_replace('/\s*\(WhatsApp,?\s*Telegram\)/i', '', $phone));
+}
+
+function abit_normalize_vk_link($link)
+{
+	if (!$link) {
+		return '';
+	}
+	$link = preg_replace('#^https?://#i', '', $link);
+	return trim($link, '/');
+}
+
+function abit_format_faculty_row($faculty)
+{
+	$vk_link = abit_normalize_vk_link(get_post_meta($faculty->ID, 'vk_link', true));
+	$title = $faculty->post_title;
+
+	if (mb_stripos($title, 'Отделение СПО') !== false) {
+		$title = 'Факультет СПО';
+	}
+
+	$center_vk_ids = [43878, 42574];
+	if (in_array((int) $faculty->ID, $center_vk_ids, true)) {
+		$vk_link = 'vk.com/abitvsau';
+	}
+
+	return [
+		'id' => $faculty->ID,
+		'faculty' => $title,
+		'teacher' => get_post_meta($faculty->ID, 'teacher', true),
+		'teacher_position' => get_post_meta($faculty->ID, 'teacher_position', true),
+		'vk_link' => $vk_link,
+		'tel1' => abit_sanitize_faculty_phone(get_post_meta($faculty->ID, 'tel1', true)),
+		'tel2' => abit_sanitize_faculty_phone(get_post_meta($faculty->ID, 'tel2', true)),
+		'tel3' => abit_sanitize_faculty_phone(get_post_meta($faculty->ID, 'tel3', true)),
+		'order' => $faculty->menu_order,
+	];
+}
+
 function abit_create_faculty($request)
 {
 	$params = $request->get_json_params();
@@ -70,17 +114,7 @@ function abit_get_all_faculties($request)
 
 	$result = [];
 	foreach ($faculties as $faculty) {
-		$result[] = [
-			'id' => $faculty->ID,
-			'faculty' => $faculty->post_title,
-			'teacher' => get_post_meta($faculty->ID, 'teacher', true),
-			'teacher_position' => get_post_meta($faculty->ID, 'teacher_position', true),
-			'vk_link' => get_post_meta($faculty->ID, 'vk_link', true),
-			'tel1' => get_post_meta($faculty->ID, 'tel1', true),
-			'tel2' => get_post_meta($faculty->ID, 'tel2', true),
-			'tel3' => get_post_meta($faculty->ID, 'tel3', true),
-			'order' => $faculty->menu_order
-		];
+		$result[] = abit_format_faculty_row($faculty);
 	}
 
 	return $result;
@@ -95,16 +129,8 @@ function abit_get_faculty($request)
 		return new WP_Error('not_found', 'Faculty not found', ['status' => 404]);
 	}
 
-	return [
-		'faculty' => get_the_title($post_id),
-		'teacher' => get_post_meta($post_id, 'teacher', true),
-		'teacher_position' => get_post_meta($post_id, 'teacher_position', true),
-		'vk_link' => get_post_meta($post_id, 'vk_link', true),
-		'tel1' => get_post_meta($post_id, 'tel1', true),
-		'tel2' => get_post_meta($post_id, 'tel2', true),
-		'tel3' => get_post_meta($post_id, 'tel3', true),
-		'order' => get_post_field('menu_order', $post_id)
-	];
+	$post = get_post($post_id);
+	return abit_format_faculty_row($post);
 }
 
 function abit_update_faculty($request)
@@ -126,6 +152,12 @@ function abit_update_faculty($request)
 
 	foreach ($params as $key => $value) {
 		if ($key !== 'faculty') {
+			if (in_array($key, ['tel1', 'tel2', 'tel3'], true)) {
+				$value = abit_sanitize_faculty_phone($value);
+			}
+			if ($key === 'vk_link') {
+				$value = abit_normalize_vk_link($value);
+			}
 			update_post_meta($post_id, $key, sanitize_text_field($value));
 		}
 	}
