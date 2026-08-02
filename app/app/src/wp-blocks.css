@@ -1,0 +1,56 @@
+.wp-block-page .block-link_content {
+	align-items: center;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	flex: 1;
+	gap: 20px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	min-height: 100%;
+	padding: 30px 50px;
+	transition: all 0.3s;
+	width: 100%;
+	text-decoration: none;
+}
+
+.wp-block-page .block-link_content:hover {
+	scale: 1.02;
+}
+
+.wp-block-page .block-link_content:active {
+	scale: 0.9;
+}
+
+.wp-block-page .block-link_content .icon {
+	display: block;
+	flex: 0 0 20px;
+	flex-shrink: 0;
+	margin-left: auto;
+	min-width: 20px;
+	order: 2;
+}
+
+.wp-block-page .block-link_content p {
+	order: 1;
+	margin: 0;
+}
+
+.wp-block-page .block-link_content.blue {
+	background: #0f91d6;
+	color: #fff !important;
+}
+
+.wp-block-page .block-link_content.blue p {
+	color: #fff !important;
+}
+
+.wp-block-page .block-link_content.white {
+	background: #fff;
+	color: #000 !important;
+	border: 1px solid #e5e5e5;
+}
+
+.wp-block-page .block-link_content.white p {
+	color: #000 !important;
+}
