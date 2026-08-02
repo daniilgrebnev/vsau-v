@@ -4,12 +4,12 @@ import { useParams } from 'react-router-dom'
 
 export const Page = () => {
 	const { id } = useParams()
-	const [content, setContent] = useState<HTMLCollection | null>(null)
+	const [content, setContent] = useState<string | null>(null)
 
 	useEffect(() => {
 		if (!id) return
-		getPage({ id }).then((res: any) => {
-			setContent(res.html ?? null)
+		getPage({ id }).then(res => {
+			setContent(res?.html ?? null)
 		})
 	}, [id])
 
@@ -18,9 +18,7 @@ export const Page = () => {
 			{!id && '404'}
 			<div className='wp-block-page min-h-full p-4 w-full rounded-[10px] bg-white'>
 				{content && (
-					<div
-						dangerouslySetInnerHTML={{ __html: content?.toString() ?? '' }}
-					/>
+					<div dangerouslySetInnerHTML={{ __html: content }} />
 				)}
 			</div>
 		</div>

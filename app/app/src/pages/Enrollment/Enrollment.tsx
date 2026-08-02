@@ -9,7 +9,7 @@ export const Enrollment = () => {
 
 	useEffect(() => {
 		getPage({ id: ENROLLMENT_PAGE_ID })
-			.then((res: { html?: string } | null) => {
+			.then(res => {
 				setContent(res?.html?.trim() || null)
 			})
 			.finally(() => {

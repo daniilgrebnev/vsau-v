@@ -100,11 +100,19 @@ export const getMenu = async ({
 			return null
 		})
 }
-export const getPage = async ({ id }: { id: string }) => {
+export interface IPageResponse {
+	html: string
+}
+
+export const getPage = async ({
+	id,
+}: {
+	id: string
+}): Promise<IPageResponse | null> => {
 	return api
 		.get(`/page/${id}/html`)
 		.then(res => {
-			return res.data as HTMLCollection
+			return res.data as IPageResponse
 		})
 		.catch(err => {
 			console.log(err)
